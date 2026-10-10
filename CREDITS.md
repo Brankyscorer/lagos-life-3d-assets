@@ -19,3 +19,7 @@ External assets used by Gidi Hustle. Swapping a URL in `public/assets/manifest.j
 If a character file 404s, the game logs one warning and uses the procedural capsule body. That fallback is not a scanned person.
 
 The playable Sims are the Microsoft Rocketbox avatars: a Black man in a denim jacket, white tee, jeans and trainers, and a Black woman in a dark trouser suit and white shirt. Their embedded PBR textures are left as authored. The old Quaternius mannequin is not used.
+
+## Transit + venue kit (transit/, tag v4)
+
+Procedural Blender models and an invented sign/advert atlas made for Lagos Life. CC0 Poly Haven models used: metal_trash_can, planter_box_01 (https://polyhaven.com). All brands, ads and film posters are fictional.
