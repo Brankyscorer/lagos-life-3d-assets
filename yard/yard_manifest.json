@@ -1,0 +1,2540 @@
+{
+ "name": "Lagos Life face-me-I-face-you yard kit",
+ "version": "1.0",
+ "file": "yard/yard_kit.glb",
+ "bytes": 5375220,
+ "units": "metres",
+ "up": "+Y",
+ "front": "+Z (every node is authored facing +Z; facade modules are placed with rotY=PI so they face the yard, -Z)",
+ "origin": "ground level (y=0); see per-asset notes for windows (bottom-centre of opening), garments (on the line), fronts (front plane at local z=0, body extends 0.22 m to -Z)",
+ "compression": "none (no Draco / meshopt / KTX2) - plain GLTFLoader works",
+ "vertex_colors": "COLOR_0 holds baked AO + grime + damp; keep material.vertexColors = true (GLTFLoader sets it)",
+ "decals": "material \"decal\" is alphaMode BLEND: set depthWrite=false, polygonOffset=true, polygonOffsetFactor/Units=-2, renderOrder=1, castShadow=false",
+ "emissive": "material \"emit_warm\" (bulkhead lamps on yard_front_door_1p8 and yard_toilet_block_front): emissiveIntensity 0 by day, ~4 at night",
+ "validation": "gltf-validator 2.0: 0 errors, 0 warnings, 0 infos, 0 hints",
+ "game_coordinates": {
+  "note": "three.js world coordinates of the Lagos Life oloya yard (x east, z north, street to the south at z=-19.2)",
+  "yard_extent": {
+   "x": [
+    -8.3,
+    13.86
+   ],
+   "z": [
+    -12.45,
+    -5.85
+   ]
+  },
+  "facade_z": -5.85,
+  "south_wall_z": -12.37,
+  "spawn_yard": [
+   1.05,
+   -8.1
+  ]
+ },
+ "placement": {
+  "convention": "pos = [x,y,z] world; rotY radians; scale [sx,1,1] (only X is scaled, to fit runs exactly); floor=true -> set userData.floor=true (tap-to-walk target)",
+  "items": [
+   {
+    "node": "yard_ground_5p54x6p6",
+    "pos": [
+     -5.53,
+     0,
+     -9.15
+    ],
+    "rotY": 0,
+    "group": "ground",
+    "floor": true
+   },
+   {
+    "node": "yard_ground_5p54x6p6",
+    "pos": [
+     0.01,
+     0,
+     -9.15
+    ],
+    "rotY": 0,
+    "group": "ground",
+    "floor": true
+   },
+   {
+    "node": "yard_ground_5p54x6p6",
+    "pos": [
+     5.55,
+     0,
+     -9.15
+    ],
+    "rotY": 0,
+    "group": "ground",
+    "floor": true
+   },
+   {
+    "node": "yard_ground_5p54x6p6",
+    "pos": [
+     11.09,
+     0,
+     -9.15
+    ],
+    "rotY": 0,
+    "group": "ground",
+    "floor": true
+   },
+   {
+    "node": "yard_walkway_1p5x2p2",
+    "pos": [
+     1.0,
+     0,
+     -6.95
+    ],
+    "rotY": 0,
+    "group": "ground",
+    "floor": true
+   },
+   {
+    "node": "yard_walkway_1p5x2p2",
+    "pos": [
+     1.0,
+     0,
+     -9.15
+    ],
+    "rotY": 0,
+    "group": "ground",
+    "floor": true
+   },
+   {
+    "node": "yard_walkway_1p5x2p2",
+    "pos": [
+     1.0,
+     0,
+     -11.35
+    ],
+    "rotY": 0,
+    "group": "ground",
+    "floor": true
+   },
+   {
+    "node": "yard_front_plain_0p9",
+    "pos": [
+     -7.97,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.7333,
+     1,
+     1
+    ],
+    "run": "run0"
+   },
+   {
+    "node": "yard_front_door_1p8",
+    "pos": [
+     -6.7967,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "run": "run1"
+   },
+   {
+    "node": "yard_front_window_1p8",
+    "pos": [
+     -5.11,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "run": "run1"
+   },
+   {
+    "node": "yard_front_plain_0p9",
+    "pos": [
+     -3.845,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "run": "run1"
+   },
+   {
+    "node": "yard_front_plain_0p9",
+    "pos": [
+     -3.0017,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "run": "run1"
+   },
+   {
+    "node": "yard_front_window_1p8",
+    "pos": [
+     -1.7367,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "run": "run1"
+   },
+   {
+    "node": "yard_front_plain_0p9",
+    "pos": [
+     -0.4717,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "run": "run1"
+   },
+   {
+    "node": "yard_front_plain_0p9",
+    "pos": [
+     2.3167,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     1.037,
+     1,
+     1
+    ],
+    "run": "run2"
+   },
+   {
+    "node": "yard_front_window_1p8",
+    "pos": [
+     3.7167,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     1.037,
+     1,
+     1
+    ],
+    "run": "run2"
+   },
+   {
+    "node": "yard_front_plain_0p9",
+    "pos": [
+     5.1167,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     1.037,
+     1,
+     1
+    ],
+    "run": "run2"
+   },
+   {
+    "node": "yard_front_door_1p8",
+    "pos": [
+     6.5167,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     1.037,
+     1,
+     1
+    ],
+    "run": "run2"
+   },
+   {
+    "node": "yard_front_plain_0p9_low",
+    "pos": [
+     7.8761,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.947,
+     1,
+     1
+    ],
+    "run": "run3"
+   },
+   {
+    "node": "yard_toilet_block_front",
+    "pos": [
+     9.7227,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.947,
+     1,
+     1
+    ],
+    "run": "run3"
+   },
+   {
+    "node": "yard_front_window_1p8_low",
+    "pos": [
+     11.9955,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.947,
+     1,
+     1
+    ],
+    "run": "run3"
+   },
+   {
+    "node": "yard_front_plain_0p9_low",
+    "pos": [
+     13.2739,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.947,
+     1,
+     1
+    ],
+    "run": "run3"
+   },
+   {
+    "node": "yard_door_wood_blue",
+    "pos": [
+     -6.7967,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "note": "door leaf in the door module opening"
+   },
+   {
+    "node": "yard_window_louvre",
+    "pos": [
+     -5.11,
+     1.1,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "note": "window: bottom-centre of the opening on the wall face"
+   },
+   {
+    "node": "yard_window_casement",
+    "pos": [
+     -1.7367,
+     1.1,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.937,
+     1,
+     1
+    ],
+    "note": "window: bottom-centre of the opening on the wall face"
+   },
+   {
+    "node": "yard_window_louvre",
+    "pos": [
+     3.7167,
+     1.1,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     1.037,
+     1,
+     1
+    ],
+    "note": "window: bottom-centre of the opening on the wall face"
+   },
+   {
+    "node": "yard_door_metal",
+    "pos": [
+     6.5167,
+     0,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     1.037,
+     1,
+     1
+    ],
+    "note": "door leaf in the door module opening"
+   },
+   {
+    "node": "yard_window_casement",
+    "pos": [
+     11.9955,
+     1.1,
+     -5.85
+    ],
+    "rotY": 3.141593,
+    "group": "facade",
+    "scale": [
+     0.947,
+     1,
+     1
+    ],
+    "note": "window: bottom-centre of the opening on the wall face"
+   },
+   {
+    "node": "yard_wall_low_3m",
+    "pos": [
+     -6.9117,
+     0,
+     -12.37
+    ],
+    "rotY": 0.0,
+    "group": "walls",
+    "scale": [
+     0.9256,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_low_3m",
+    "pos": [
+     -4.135,
+     0,
+     -12.37
+    ],
+    "rotY": 0.0,
+    "group": "walls",
+    "scale": [
+     0.9256,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_low_3m",
+    "pos": [
+     -1.3583,
+     0,
+     -12.37
+    ],
+    "rotY": 0.0,
+    "group": "walls",
+    "scale": [
+     0.9256,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_low_3m",
+    "pos": [
+     3.3687,
+     0,
+     -12.37
+    ],
+    "rotY": 0.0,
+    "group": "walls",
+    "scale": [
+     0.9992,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_low_3m",
+    "pos": [
+     6.3662,
+     0,
+     -12.37
+    ],
+    "rotY": 0.0,
+    "group": "walls",
+    "scale": [
+     0.9992,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_low_3m",
+    "pos": [
+     9.3637,
+     0,
+     -12.37
+    ],
+    "rotY": 0.0,
+    "group": "walls",
+    "scale": [
+     0.9992,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_low_3m",
+    "pos": [
+     12.3612,
+     0,
+     -12.37
+    ],
+    "rotY": 0.0,
+    "group": "walls",
+    "scale": [
+     0.9992,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_pillar_low",
+    "pos": [
+     -5.5233,
+     0,
+     -12.37
+    ],
+    "rotY": 0,
+    "group": "walls"
+   },
+   {
+    "node": "yard_wall_pillar_low",
+    "pos": [
+     -2.7467,
+     0,
+     -12.37
+    ],
+    "rotY": 0,
+    "group": "walls"
+   },
+   {
+    "node": "yard_wall_pillar_low",
+    "pos": [
+     4.8675,
+     0,
+     -12.37
+    ],
+    "rotY": 0,
+    "group": "walls"
+   },
+   {
+    "node": "yard_wall_pillar_low",
+    "pos": [
+     7.865,
+     0,
+     -12.37
+    ],
+    "rotY": 0,
+    "group": "walls"
+   },
+   {
+    "node": "yard_wall_pillar_low",
+    "pos": [
+     10.8625,
+     0,
+     -12.37
+    ],
+    "rotY": 0,
+    "group": "walls"
+   },
+   {
+    "node": "yard_gate_1p5",
+    "pos": [
+     0.95,
+     0,
+     -12.37
+    ],
+    "rotY": 0,
+    "group": "walls",
+    "note": "gate pillars at x 0.17 / 1.73 (colliders include them); both leaves stand open into the yard"
+   },
+   {
+    "node": "yard_wall_3m",
+    "pos": [
+     -8.2,
+     0,
+     -10.8
+    ],
+    "rotY": 1.570796,
+    "group": "walls",
+    "scale": [
+     1.1,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_3m",
+    "pos": [
+     -8.2,
+     0,
+     -7.5
+    ],
+    "rotY": 1.570796,
+    "group": "walls",
+    "scale": [
+     1.1,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_3m",
+    "pos": [
+     13.78,
+     0,
+     -10.8
+    ],
+    "rotY": 1.570796,
+    "group": "walls",
+    "scale": [
+     1.1,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_wall_3m",
+    "pos": [
+     13.78,
+     0,
+     -7.5
+    ],
+    "rotY": 1.570796,
+    "group": "walls",
+    "scale": [
+     1.1,
+     1,
+     1
+    ]
+   },
+   {
+    "node": "yard_clothesline_6m",
+    "pos": [
+     5.6,
+     0,
+     -7.0
+    ],
+    "rotY": 0,
+    "group": "laundry"
+   },
+   {
+    "node": "yard_garment_towel",
+    "pos": [
+     3.14,
+     1.8172,
+     -7.0
+    ],
+    "rotY": 3.141593,
+    "group": "laundry",
+    "note": "origin sits on the line"
+   },
+   {
+    "node": "yard_garment_shirt",
+    "pos": [
+     4.03,
+     1.7774,
+     -7.0
+    ],
+    "rotY": 3.141593,
+    "group": "laundry",
+    "note": "origin sits on the line"
+   },
+   {
+    "node": "yard_garment_wrapper",
+    "pos": [
+     5.135,
+     1.7524,
+     -7.0
+    ],
+    "rotY": 3.141593,
+    "group": "laundry",
+    "note": "origin sits on the line"
+   },
+   {
+    "node": "yard_garment_singlet",
+    "pos": [
+     6.02,
+     1.752,
+     -7.0
+    ],
+    "rotY": 3.141593,
+    "group": "laundry",
+    "note": "origin sits on the line"
+   },
+   {
+    "node": "yard_garment_trousers",
+    "pos": [
+     6.55,
+     1.76,
+     -7.0
+    ],
+    "rotY": 3.141593,
+    "group": "laundry",
+    "note": "origin sits on the line"
+   },
+   {
+    "node": "yard_garment_bedsheet",
+    "pos": [
+     7.625,
+     1.7956,
+     -7.0
+    ],
+    "rotY": 3.141593,
+    "group": "laundry",
+    "note": "origin sits on the line"
+   },
+   {
+    "node": "yard_tank_stand",
+    "pos": [
+     -3.75,
+     0,
+     -8.65
+    ],
+    "rotY": 0,
+    "group": "props",
+    "note": "replaces the procedural tank"
+   },
+   {
+    "node": "yard_sink_tap",
+    "pos": [
+     -3.26,
+     0,
+     -6.1
+    ],
+    "rotY": 3.141593,
+    "group": "props",
+    "note": "back face against the facade"
+   },
+   {
+    "node": "yard_step_slab_a",
+    "pos": [
+     -3.26,
+     -0.012,
+     -6.62
+    ],
+    "rotY": 0.05,
+    "group": "props"
+   },
+   {
+    "node": "yard_stain_splash",
+    "pos": [
+     -3.26,
+     0.027,
+     -6.62
+    ],
+    "rotY": 0.3,
+    "group": "decals",
+    "note": "sits on the step slab"
+   },
+   {
+    "node": "yard_stain_puddle_a",
+    "pos": [
+     -2.75,
+     0,
+     -7.15
+    ],
+    "rotY": 0.4,
+    "group": "decals"
+   },
+   {
+    "node": "yard_water_drum",
+    "pos": [
+     -4.3,
+     0,
+     -6.15
+    ],
+    "rotY": 0.6,
+    "group": "props"
+   },
+   {
+    "node": "yard_bucket_red",
+    "pos": [
+     -2.6,
+     0,
+     -6.2
+    ],
+    "rotY": 0,
+    "group": "props"
+   },
+   {
+    "node": "yard_basin",
+    "pos": [
+     -2.05,
+     0,
+     -6.8
+    ],
+    "rotY": 0,
+    "group": "props"
+   },
+   {
+    "node": "yard_bucket_blue",
+    "pos": [
+     11.05,
+     0,
+     -6.38
+    ],
+    "rotY": 0,
+    "group": "props"
+   },
+   {
+    "node": "yard_coal_stove",
+    "pos": [
+     -7.75,
+     0,
+     -6.75
+    ],
+    "rotY": 0,
+    "group": "props"
+   },
+   {
+    "node": "yard_pot",
+    "pos": [
+     -7.75,
+     0.315,
+     -6.75
+    ],
+    "rotY": 0.7,
+    "group": "props"
+   },
+   {
+    "node": "yard_stain_soot",
+    "pos": [
+     -7.7,
+     0,
+     -6.8
+    ],
+    "rotY": 0,
+    "group": "decals"
+   },
+   {
+    "node": "yard_chair_stack",
+    "pos": [
+     2.3,
+     0,
+     -6.28
+    ],
+    "rotY": 3.141593,
+    "group": "props"
+   },
+   {
+    "node": "yard_table_plastic",
+    "pos": [
+     4.75,
+     0,
+     -9.35
+    ],
+    "rotY": 0.12,
+    "group": "props"
+   },
+   {
+    "node": "yard_bench_wood",
+    "pos": [
+     -0.4,
+     0,
+     -9.32
+    ],
+    "rotY": 0,
+    "group": "props",
+    "note": "replaces the procedural bench (same spot)"
+   },
+   {
+    "node": "yard_gen_canopy",
+    "pos": [
+     7.15,
+     0,
+     -8.05
+    ],
+    "rotY": 3.141593,
+    "group": "props",
+    "note": "replaces the zinc gen-cover box"
+   },
+   {
+    "node": "yard_generator",
+    "pos": [
+     7.05,
+     0,
+     -8.0
+    ],
+    "rotY": 3.141593,
+    "group": "props",
+    "note": "replaces the procedural generator; keep userData.generator=(7.15,0,-8.05)"
+   },
+   {
+    "node": "yard_potted_plant",
+    "pos": [
+     2.3,
+     0,
+     -11.95
+    ],
+    "rotY": 0.4,
+    "group": "props"
+   },
+   {
+    "node": "yard_potted_plant",
+    "pos": [
+     -0.35,
+     0,
+     -11.95
+    ],
+    "rotY": 2.1,
+    "group": "props"
+   },
+   {
+    "node": "yard_potted_plant",
+    "pos": [
+     13.25,
+     0,
+     -6.3
+    ],
+    "rotY": 1.0,
+    "group": "props"
+   },
+   {
+    "node": "yard_step_slab_b",
+    "pos": [
+     9.0125,
+     -0.012,
+     -6.62
+    ],
+    "rotY": 0,
+    "group": "props"
+   },
+   {
+    "node": "yard_stain_puddle_b",
+    "pos": [
+     10.433,
+     0,
+     -6.75
+    ],
+    "rotY": 0.1,
+    "group": "decals"
+   },
+   {
+    "node": "yard_stain_puddle_a",
+    "pos": [
+     1.0,
+     0.035,
+     -11.9
+    ],
+    "rotY": 1.3,
+    "group": "decals",
+    "note": "on the walkway by the gate"
+   }
+  ],
+  "colliders": [
+   {
+    "name": "yard-wall-south-w",
+    "x": -8.3,
+    "z": -12.47,
+    "w": 8.62,
+    "d": 0.2,
+    "h": 1.05,
+    "kind": "wall",
+    "note": "replaces fence solid (-8.2,-12.45,8.4,0.16,0.7)"
+   },
+   {
+    "name": "yard-wall-south-e",
+    "x": 1.58,
+    "z": -12.47,
+    "w": 12.28,
+    "d": 0.2,
+    "h": 1.05,
+    "kind": "wall",
+    "note": "replaces fence solid (1.75,-12.45,12.1,0.16,0.7)"
+   },
+   {
+    "name": "yard-wall-west",
+    "x": -8.3,
+    "z": -12.45,
+    "w": 0.2,
+    "d": 6.6,
+    "h": 2.25,
+    "kind": "wall",
+    "note": "replaces side fence (-8.3,-12.45,0.16,6.4,0.7)"
+   },
+   {
+    "name": "yard-wall-east",
+    "x": 13.68,
+    "z": -12.45,
+    "w": 0.2,
+    "d": 6.6,
+    "h": 2.25,
+    "kind": "wall",
+    "note": "replaces side fence (13.7,-12.45,0.16,6.4,0.7)"
+   },
+   {
+    "name": "yard-sink",
+    "x": -3.64,
+    "z": -6.35,
+    "w": 0.76,
+    "d": 0.5,
+    "h": 0.95,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-drum",
+    "x": -4.55,
+    "z": -6.4,
+    "w": 0.5,
+    "d": 0.5,
+    "h": 0.95,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-table",
+    "x": 4.35,
+    "z": -9.75,
+    "w": 0.8,
+    "d": 0.8,
+    "h": 0.75,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-chair-stack",
+    "x": 1.97,
+    "z": -6.62,
+    "w": 0.66,
+    "d": 0.7,
+    "h": 1.2,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-stove",
+    "x": -7.94,
+    "z": -6.94,
+    "w": 0.38,
+    "d": 0.38,
+    "h": 0.35,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-corner-nw",
+    "x": -8.3,
+    "z": -5.85,
+    "w": 0.66,
+    "d": 0.3,
+    "h": 2.9,
+    "kind": "prop",
+    "note": "front module closing the NW corner gap"
+   },
+   {
+    "name": "yard-line-post-w",
+    "x": 2.55,
+    "z": -7.05,
+    "w": 0.1,
+    "d": 0.1,
+    "h": 2.0,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-line-post-e",
+    "x": 8.55,
+    "z": -7.05,
+    "w": 0.1,
+    "d": 0.1,
+    "h": 2.0,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-plant-gate-e",
+    "x": 2.0,
+    "z": -12.25,
+    "w": 0.6,
+    "d": 0.6,
+    "h": 0.8,
+    "kind": "prop",
+    "note": ""
+   },
+   {
+    "name": "yard-plant-gate-w",
+    "x": -0.65,
+    "z": -12.25,
+    "w": 0.6,
+    "d": 0.6,
+    "h": 0.8,
+    "kind": "prop",
+    "note": ""
+   }
+  ],
+  "collider_convention": "oloya addSolid(x, z, w, d, h, kind): (x,z) = min corner",
+  "info": {
+   "toilet_door_x": 9.012,
+   "bathroom_door_x": 10.433,
+   "toilet_block_centre_x": 9.723,
+   "toilet_block_scale_x": 0.947,
+   "lamps": [
+    {
+     "node": "yard_front_door_1p8",
+     "pos": [
+      -6.7967,
+      0,
+      -5.85
+     ]
+    },
+    {
+     "node": "yard_front_door_1p8",
+     "pos": [
+      6.5167,
+      0,
+      -5.85
+     ]
+    },
+    {
+     "node": "yard_toilet_block_front",
+     "pos": [
+      9.7227,
+      0,
+      -5.85
+     ]
+    }
+   ]
+  },
+  "remove_procedural": [
+   "floors: the two pushBox(floors,\"yard\",...) boxes (sand 22.2 x 6.5 at (2.7,-9.2) and concrete walkway 1.5 x 7.2 at (1,-8.6)); keep \"corridor\", \"passage\" and \"apron\"",
+   "dressYard(): the whole \"yard-fence\" group (low walls, side walls, gate pillars, lintel, two gate leaves) - replaced by the kit wall group, which takes over the name \"yard-fence\"",
+   "the 5 yard-side windows: pushBox \"glass\" + \"bars\" at x -5.7, -2, 5.5, 9, 12 (z -5.82 / -5.7)",
+   "the procedural water tank (cylinder at (-3.75,1.55,-8.65)) and its 4 stand legs",
+   "the procedural generator box \"generator\", its zinc \"gen-cover\" and its 4 posts (keep group.userData.generator = (7.15,0,-8.05))",
+   "the \"clothesline\" box and all hangCloth \"clothes\" meshes",
+   "any yard dressing added by the previous AI Studio pass (A02): yard windows/doors/garments/clothesline/table/bench/laterite floor/fence meshes inside x -8.6..14.2, z -12.6..-5.8"
+  ],
+  "cream_dado_shrink": "for every wall solid with z == -5.85 (the yard-facing row), start the \"cream\" and \"dado\" boxes at z = -5.62 instead of -5.85 (depth s.d - 0.23) so they sit behind the 0.22 m kit fronts"
+ },
+ "assets": [
+  {
+   "id": "yard_basin",
+   "node": "yard_basin",
+   "category": "prop",
+   "size_m": {
+    "x": 0.704,
+    "y_height": 0.202,
+    "z": 0.704
+   },
+   "bbox_three": {
+    "min": [
+     -0.352,
+     0.0,
+     -0.352
+    ],
+    "max": [
+     0.352,
+     0.202,
+     0.352
+    ]
+   },
+   "tris": 246,
+   "materials": [
+    "plastic",
+    "water",
+    "atlas_fabric"
+   ],
+   "notes": "Green plastic washing basin, 0.7 m dia, 0.21 m tall, with water and a soaking red cloth."
+  },
+  {
+   "id": "yard_bench_wood",
+   "node": "yard_bench_wood",
+   "category": "furniture",
+   "size_m": {
+    "x": 1.5,
+    "y_height": 0.452,
+    "z": 0.41
+   },
+   "bbox_three": {
+    "min": [
+     -0.75,
+     0.0,
+     -0.205
+    ],
+    "max": [
+     0.75,
+     0.452,
+     0.205
+    ]
+   },
+   "tris": 144,
+   "materials": [
+    "wood",
+    "metal_dark"
+   ],
+   "notes": "Rough sawn-plank bench, 1.5 m long, seat 0.28 m deep at 0.45 m. Splayed trestle legs with a stretcher. Long axis along X."
+  },
+  {
+   "id": "yard_bucket_blue",
+   "node": "yard_bucket_blue",
+   "category": "prop",
+   "size_m": {
+    "x": 0.336,
+    "y_height": 0.433,
+    "z": 0.336
+   },
+   "bbox_three": {
+    "min": [
+     -0.168,
+     0.0,
+     -0.168
+    ],
+    "max": [
+     0.168,
+     0.433,
+     0.168
+    ]
+   },
+   "tris": 234,
+   "materials": [
+    "plastic",
+    "water",
+    "steel_galv"
+   ],
+   "notes": "Blue plastic bucket, 0.32 m dia, 0.3 m tall, wire handle, part-filled with water."
+  },
+  {
+   "id": "yard_bucket_red",
+   "node": "yard_bucket_red",
+   "category": "prop",
+   "size_m": {
+    "x": 0.336,
+    "y_height": 0.433,
+    "z": 0.336
+   },
+   "bbox_three": {
+    "min": [
+     -0.168,
+     0.0,
+     -0.168
+    ],
+    "max": [
+     0.168,
+     0.433,
+     0.168
+    ]
+   },
+   "tris": 234,
+   "materials": [
+    "plastic",
+    "water",
+    "steel_galv"
+   ],
+   "notes": "Red plastic bucket, 0.32 m dia, 0.3 m tall, wire handle, part-filled with water."
+  },
+  {
+   "id": "yard_chair_stack",
+   "node": "yard_chair_stack",
+   "category": "furniture",
+   "size_m": {
+    "x": 0.676,
+    "y_height": 1.193,
+    "z": 0.734
+   },
+   "bbox_three": {
+    "min": [
+     -0.338,
+     -0.003,
+     -0.336
+    ],
+    "max": [
+     0.338,
+     1.19,
+     0.398
+    ]
+   },
+   "tris": 2400,
+   "materials": [
+    "ph__plastic_monobloc_chair_01__plastic_monobloc_chair_01"
+   ],
+   "notes": "Stack of five monobloc chairs (4 white, red on top), Poly Haven CC0 model, ~1.18 m tall. Front faces +Z."
+  },
+  {
+   "id": "yard_clothesline_6m",
+   "node": "yard_clothesline_6m",
+   "category": "prop",
+   "size_m": {
+    "x": 6.24,
+    "y_height": 2.03,
+    "z": 0.228
+   },
+   "bbox_three": {
+    "min": [
+     -3.12,
+     0.0,
+     -0.114
+    ],
+    "max": [
+     3.12,
+     2.03,
+     0.114
+    ]
+   },
+   "tris": 512,
+   "materials": [
+    "steel_galv",
+    "concrete",
+    "plastic"
+   ],
+   "notes": "Two galvanised posts 6 m apart (x=+-3) in concrete collars, blue nylon line tied at 1.85 m, sag 0.1 m at mid-span. Line height at local x: y = 1.85 - 0.1*(1-(x/3)^2). Garments attach at that point (their origin is the line).",
+   "attach": {
+    "line_y_at_x": "1.85 - 0.1*(1-(x/3)^2)",
+    "post_x": [
+     -3,
+     3
+    ]
+   }
+  },
+  {
+   "id": "yard_coal_stove",
+   "node": "yard_coal_stove",
+   "category": "prop",
+   "size_m": {
+    "x": 0.358,
+    "y_height": 0.315,
+    "z": 0.356
+   },
+   "bbox_three": {
+    "min": [
+     -0.178,
+     0.0,
+     -0.178
+    ],
+    "max": [
+     0.18,
+     0.315,
+     0.178
+    ]
+   },
+   "tris": 458,
+   "materials": [
+    "metal_paint",
+    "charcoal"
+   ],
+   "notes": "Cast-iron charcoal stove (\"coal pot\") with charcoal, 0.35 m dia, 0.31 m tall. A pot sits on its rests at y=0.315 (place yard_pot at the same x,z with y=0.315). Put yard_stain_soot under it.",
+   "attach": {
+    "pot_y": 0.315
+   }
+  },
+  {
+   "id": "yard_door_metal",
+   "node": "yard_door_metal",
+   "category": "door",
+   "size_m": {
+    "x": 0.95,
+    "y_height": 2.12,
+    "z": 0.163
+   },
+   "bbox_three": {
+    "min": [
+     -0.475,
+     0.0,
+     -0.14
+    ],
+    "max": [
+     0.475,
+     2.12,
+     0.023
+    ]
+   },
+   "tris": 950,
+   "materials": [
+    "metal_paint",
+    "paint_wood",
+    "alu",
+    "steel_galv"
+   ],
+   "notes": "Burglar-proof steel door (pressed-diamond lower sheet, ring grille upper half, hasp and padlock) in a steel frame, with a dark wooden door behind it. Fits the 0.95 x 2.12 m door opening; place at the module position/rotation. Static."
+  },
+  {
+   "id": "yard_door_wood_blue",
+   "node": "yard_door_wood_blue",
+   "category": "door",
+   "size_m": {
+    "x": 1.05,
+    "y_height": 2.17,
+    "z": 0.182
+   },
+   "bbox_three": {
+    "min": [
+     -0.525,
+     0.0,
+     -0.17
+    ],
+    "max": [
+     0.525,
+     2.17,
+     0.012
+    ]
+   },
+   "tris": 284,
+   "materials": [
+    "wood",
+    "paint_wood",
+    "alu",
+    "metal_dark"
+   ],
+   "notes": "Six-panel wooden door with frame, architrave, lever handle and hinges, weathered blue paint. Fits the 0.95 x 2.12 m opening of yard_front_door_1p8 / yard_toilet_block_front: place it at the module position and rotation. The leaf sits 7-11 cm behind the wall face (local z -0.07..-0.11). Closed and static (one mesh)."
+  },
+  {
+   "id": "yard_door_wood_brown",
+   "node": "yard_door_wood_brown",
+   "category": "door",
+   "size_m": {
+    "x": 1.05,
+    "y_height": 2.17,
+    "z": 0.182
+   },
+   "bbox_three": {
+    "min": [
+     -0.525,
+     0.0,
+     -0.17
+    ],
+    "max": [
+     0.525,
+     2.17,
+     0.012
+    ]
+   },
+   "tris": 284,
+   "materials": [
+    "wood",
+    "paint_wood",
+    "alu",
+    "metal_dark"
+   ],
+   "notes": "Six-panel wooden door with frame, architrave, lever handle and hinges, weathered brown paint. Fits the 0.95 x 2.12 m opening of yard_front_door_1p8 / yard_toilet_block_front: place it at the module position and rotation. The leaf sits 7-11 cm behind the wall face (local z -0.07..-0.11). Closed and static (one mesh)."
+  },
+  {
+   "id": "yard_door_wood_green",
+   "node": "yard_door_wood_green",
+   "category": "door",
+   "size_m": {
+    "x": 1.05,
+    "y_height": 2.17,
+    "z": 0.182
+   },
+   "bbox_three": {
+    "min": [
+     -0.525,
+     0.0,
+     -0.17
+    ],
+    "max": [
+     0.525,
+     2.17,
+     0.012
+    ]
+   },
+   "tris": 284,
+   "materials": [
+    "wood",
+    "paint_wood",
+    "alu",
+    "metal_dark"
+   ],
+   "notes": "Six-panel wooden door with frame, architrave, lever handle and hinges, weathered green paint. Fits the 0.95 x 2.12 m opening of yard_front_door_1p8 / yard_toilet_block_front: place it at the module position and rotation. The leaf sits 7-11 cm behind the wall face (local z -0.07..-0.11). Closed and static (one mesh)."
+  },
+  {
+   "id": "yard_front_door_1p8",
+   "node": "yard_front_door_1p8",
+   "category": "front",
+   "size_m": {
+    "x": 1.8,
+    "y_height": 2.9,
+    "z": 0.54
+   },
+   "bbox_three": {
+    "min": [
+     -0.9,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     0.9,
+     2.9,
+     0.32
+    ]
+   },
+   "tris": 160,
+   "materials": [
+    "plaster_paint",
+    "concrete",
+    "plaster_old",
+    "decal",
+    "plastic",
+    "emit_warm"
+   ],
+   "notes": "Room-front cladding module, 1.8 m wide x 2.9 m tall x 0.22 m deep. Front plane at local z=0 facing +Z, back at z=-0.22. Cream painted plaster, brown dado band (0.5 m) with damp, concrete lintel band at the top. 0.95 x 2.12 m door opening with a concrete step and a bulkhead lamp; fill it with a yard_door_* asset.",
+   "opening": {
+    "kind": "door",
+    "x": 0,
+    "y": 0,
+    "w": 0.95,
+    "h": 2.12,
+    "depth": 0.22,
+    "note": "door assets: same position and rotation as this module"
+   },
+   "emissive": [
+    "emit_warm (bulkhead lamp above the door)"
+   ],
+   "light_anchor": [
+    0,
+    2.32,
+    0.15
+   ]
+  },
+  {
+   "id": "yard_front_plain_0p9",
+   "node": "yard_front_plain_0p9",
+   "category": "front",
+   "size_m": {
+    "x": 0.9,
+    "y_height": 2.9,
+    "z": 0.256
+   },
+   "bbox_three": {
+    "min": [
+     -0.45,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     0.45,
+     2.9,
+     0.036
+    ]
+   },
+   "tris": 68,
+   "materials": [
+    "plaster_paint",
+    "concrete",
+    "plaster_old",
+    "decal"
+   ],
+   "notes": "Room-front cladding module, 0.9 m wide x 2.9 m tall x 0.22 m deep. Front plane at local z=0 facing +Z, back at z=-0.22. Cream painted plaster, brown dado band (0.5 m) with damp, concrete lintel band at the top. Plain filler."
+  },
+  {
+   "id": "yard_front_plain_0p9_low",
+   "node": "yard_front_plain_0p9_low",
+   "category": "front",
+   "size_m": {
+    "x": 0.9,
+    "y_height": 2.6,
+    "z": 0.256
+   },
+   "bbox_three": {
+    "min": [
+     -0.45,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     0.45,
+     2.6,
+     0.036
+    ]
+   },
+   "tris": 64,
+   "materials": [
+    "plaster_paint",
+    "concrete",
+    "plaster_old",
+    "decal"
+   ],
+   "notes": "Room-front cladding module, 0.9 m wide x 2.6 m tall x 0.22 m deep. Front plane at local z=0 facing +Z, back at z=-0.22. Cream painted plaster, brown dado band (0.5 m) with damp, concrete lintel band at the top. Plain filler for the 2.6 m blocks."
+  },
+  {
+   "id": "yard_front_window_1p8",
+   "node": "yard_front_window_1p8",
+   "category": "front",
+   "size_m": {
+    "x": 1.8,
+    "y_height": 2.9,
+    "z": 0.29
+   },
+   "bbox_three": {
+    "min": [
+     -0.9,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     0.9,
+     2.9,
+     0.07
+    ]
+   },
+   "tris": 152,
+   "materials": [
+    "plaster_paint",
+    "concrete",
+    "plaster_old",
+    "decal",
+    "atlas_fabric"
+   ],
+   "notes": "Room-front cladding module, 1.8 m wide x 2.9 m tall x 0.22 m deep. Front plane at local z=0 facing +Z, back at z=-0.22. Cream painted plaster, brown dado band (0.5 m) with damp, concrete lintel band at the top. 0.9 x 0.9 m window opening (sill 1.1 m) with a concrete sill, rain streaks and a curtain inside; fill it with yard_window_louvre or yard_window_casement.",
+   "opening": {
+    "kind": "window",
+    "x": 0,
+    "y": 1.1,
+    "w": 0.9,
+    "h": 0.9,
+    "depth": 0.12,
+    "note": "window assets: same position/rotation as this module, plus local y=1.1"
+   }
+  },
+  {
+   "id": "yard_front_window_1p8_low",
+   "node": "yard_front_window_1p8_low",
+   "category": "front",
+   "size_m": {
+    "x": 1.8,
+    "y_height": 2.6,
+    "z": 0.29
+   },
+   "bbox_three": {
+    "min": [
+     -0.9,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     0.9,
+     2.6,
+     0.07
+    ]
+   },
+   "tris": 142,
+   "materials": [
+    "plaster_paint",
+    "concrete",
+    "plaster_old",
+    "decal",
+    "atlas_fabric"
+   ],
+   "notes": "Room-front cladding module, 1.8 m wide x 2.6 m tall x 0.22 m deep. Front plane at local z=0 facing +Z, back at z=-0.22. Cream painted plaster, brown dado band (0.5 m) with damp, concrete lintel band at the top. Window module for the 2.6 m blocks.",
+   "opening": {
+    "kind": "window",
+    "x": 0,
+    "y": 1.1,
+    "w": 0.9,
+    "h": 0.9,
+    "depth": 0.12,
+    "note": "window assets: same position/rotation as this module, plus local y=1.1"
+   }
+  },
+  {
+   "id": "yard_garment_bedsheet",
+   "node": "yard_garment_bedsheet",
+   "category": "garment",
+   "size_m": {
+    "x": 1.612,
+    "y_height": 1.022,
+    "z": 0.109
+   },
+   "bbox_three": {
+    "min": [
+     -0.806,
+     -1.012,
+     -0.054
+    ],
+    "max": [
+     0.806,
+     0.01,
+     0.055
+    ]
+   },
+   "tris": 1612,
+   "materials": [
+    "atlas_fabric"
+   ],
+   "notes": "Floral bedsheet over the line, 1.55 m wide, hangs 1.0 m in front. Lowest edge ~0.85 m below the line. Origin = the line."
+  },
+  {
+   "id": "yard_garment_shirt",
+   "node": "yard_garment_shirt",
+   "category": "garment",
+   "size_m": {
+    "x": 0.924,
+    "y_height": 0.77,
+    "z": 0.037
+   },
+   "bbox_three": {
+    "min": [
+     -0.462,
+     -0.74,
+     -0.016
+    ],
+    "max": [
+     0.462,
+     0.03,
+     0.021
+    ]
+   },
+   "tris": 644,
+   "materials": [
+    "atlas_fabric",
+    "plastic"
+   ],
+   "notes": "Blue plaid long-sleeve shirt pegged by the shoulders. Origin = the line point between the two pegs (pegs at local x +-0.22). Hangs 0.76 m below the line, 0.9 m wide."
+  },
+  {
+   "id": "yard_garment_singlet",
+   "node": "yard_garment_singlet",
+   "category": "garment",
+   "size_m": {
+    "x": 0.46,
+    "y_height": 0.69,
+    "z": 0.031
+   },
+   "bbox_three": {
+    "min": [
+     -0.23,
+     -0.66,
+     -0.015
+    ],
+    "max": [
+     0.23,
+     0.03,
+     0.016
+    ]
+   },
+   "tris": 600,
+   "materials": [
+    "atlas_fabric",
+    "plastic"
+   ],
+   "notes": "White ribbed singlet pegged by the straps (pegs at local x +-0.125). Hangs 0.66 m below the line."
+  },
+  {
+   "id": "yard_garment_towel",
+   "node": "yard_garment_towel",
+   "category": "garment",
+   "size_m": {
+    "x": 0.734,
+    "y_height": 0.542,
+    "z": 0.066
+   },
+   "bbox_three": {
+    "min": [
+     -0.367,
+     -0.532,
+     -0.033
+    ],
+    "max": [
+     0.367,
+     0.01,
+     0.033
+    ]
+   },
+   "tris": 420,
+   "materials": [
+    "atlas_fabric"
+   ],
+   "notes": "Striped terry towel over the line, 0.72 m wide, hangs 0.52 m. Origin = the line."
+  },
+  {
+   "id": "yard_garment_trousers",
+   "node": "yard_garment_trousers",
+   "category": "garment",
+   "size_m": {
+    "x": 0.434,
+    "y_height": 1.05,
+    "z": 0.032
+   },
+   "bbox_three": {
+    "min": [
+     -0.217,
+     -1.02,
+     -0.016
+    ],
+    "max": [
+     0.217,
+     0.03,
+     0.016
+    ]
+   },
+   "tris": 376,
+   "materials": [
+    "atlas_fabric",
+    "plastic"
+   ],
+   "notes": "Faded jeans pegged at the waistband (pegs at local x +-0.18). Hangs 1.02 m below the line."
+  },
+  {
+   "id": "yard_garment_wrapper",
+   "node": "yard_garment_wrapper",
+   "category": "garment",
+   "size_m": {
+    "x": 1.196,
+    "y_height": 0.982,
+    "z": 0.097
+   },
+   "bbox_three": {
+    "min": [
+     -0.598,
+     -0.972,
+     -0.048
+    ],
+    "max": [
+     0.598,
+     0.01,
+     0.049
+    ]
+   },
+   "tris": 1100,
+   "materials": [
+    "atlas_fabric"
+   ],
+   "notes": "Ankara wax-print wrapper folded over the line: 1.15 m wide, hangs 0.86 m in front (+Z) and 0.96 m behind. Origin = the line."
+  },
+  {
+   "id": "yard_gate_1p5",
+   "node": "yard_gate_1p5",
+   "category": "wall",
+   "size_m": {
+    "x": 1.92,
+    "y_height": 1.96,
+    "z": 0.786
+   },
+   "bbox_three": {
+    "min": [
+     -0.96,
+     0.0,
+     -0.18
+    ],
+    "max": [
+     0.96,
+     1.96,
+     0.606
+    ]
+   },
+   "tris": 374,
+   "materials": [
+    "plaster_old",
+    "concrete",
+    "decal",
+    "metal_paint",
+    "metal_dark"
+   ],
+   "notes": "Pedestrian gate: two 0.3 m pillars (centres x=+-0.78, tops 1.96 m) and a green steel double gate 1.3 m tall with spear tops; both leaves stand open, swung ~72-76 deg toward +Z (into the yard, 0.62 m leaves), leaving a 1.2 m clear walkway. Origin = gate centre on the wall line."
+  },
+  {
+   "id": "yard_gen_canopy",
+   "node": "yard_gen_canopy",
+   "category": "prop",
+   "size_m": {
+    "x": 1.7,
+    "y_height": 1.38,
+    "z": 1.32
+   },
+   "bbox_three": {
+    "min": [
+     -0.85,
+     0.0,
+     -0.65
+    ],
+    "max": [
+     0.85,
+     1.38,
+     0.67
+    ]
+   },
+   "tris": 104,
+   "materials": [
+    "metal_paint",
+    "wood",
+    "zinc_rusty"
+   ],
+   "notes": "Rusty zinc lean-to over the generator on four angle-iron posts, 1.5 x 1.1 m, 1.36 m at the front (+Z), 1.22 m at the back."
+  },
+  {
+   "id": "yard_generator",
+   "node": "yard_generator",
+   "category": "prop",
+   "size_m": {
+    "x": 1.32,
+    "y_height": 0.577,
+    "z": 0.836
+   },
+   "bbox_three": {
+    "min": [
+     -0.415,
+     -0.0,
+     -0.553
+    ],
+    "max": [
+     0.905,
+     0.577,
+     0.283
+    ]
+   },
+   "tris": 2044,
+   "materials": [
+    "ph__portable_generator__portable_generator",
+    "ph__portable_generator__portable_generator_glass",
+    "cable"
+   ],
+   "notes": "Small petrol generator (Poly Haven portable_generator, CC0) with an extension cable coil. ~0.82 x 0.56 x 0.58 m."
+  },
+  {
+   "id": "yard_ground_5p54x6p6",
+   "node": "yard_ground_5p54x6p6",
+   "category": "ground",
+   "size_m": {
+    "x": 5.54,
+    "y_height": 0.0,
+    "z": 6.6
+   },
+   "bbox_three": {
+    "min": [
+     -2.77,
+     0.0,
+     -3.3
+    ],
+    "max": [
+     2.77,
+     0.0,
+     3.3
+    ]
+   },
+   "tris": 1344,
+   "materials": [
+    "ground"
+   ],
+   "notes": "Packed laterite yard earth, 5.54 x 6.6 m, flat top at y=0. Chain along X every 5.54 m with rotY=0 (texture and vertex mottling are periodic in X, so tiles join without seams). 4 tiles cover the 22.16 m yard.",
+   "tiling": "x:5.54 (no rotation)"
+  },
+  {
+   "id": "yard_pot",
+   "node": "yard_pot",
+   "category": "prop",
+   "size_m": {
+    "x": 0.381,
+    "y_height": 0.225,
+    "z": 0.308
+   },
+   "bbox_three": {
+    "min": [
+     -0.191,
+     0.0,
+     -0.154
+    ],
+    "max": [
+     0.19,
+     0.225,
+     0.154
+    ]
+   },
+   "tris": 258,
+   "materials": [
+    "alu",
+    "plastic"
+   ],
+   "notes": "Dented aluminium cooking pot with lid, 0.31 m dia, 0.2 m tall, sooty bottom. Sits on yard_coal_stove at y=0.315."
+  },
+  {
+   "id": "yard_potted_plant",
+   "node": "yard_potted_plant",
+   "category": "prop",
+   "size_m": {
+    "x": 0.628,
+    "y_height": 0.769,
+    "z": 0.592
+   },
+   "bbox_three": {
+    "min": [
+     -0.355,
+     -0.011,
+     -0.379
+    ],
+    "max": [
+     0.273,
+     0.758,
+     0.213
+    ]
+   },
+   "tris": 2399,
+   "materials": [
+    "ph__potted_plant_02__potted_plant_02_pot",
+    "ph__potted_plant_02__potted_plant_02_leaves"
+   ],
+   "notes": "Leafy plant in a clay pot (Poly Haven potted_plant_02, CC0, decimated, 90 % scale), ~0.76 m tall."
+  },
+  {
+   "id": "yard_sink_tap",
+   "node": "yard_sink_tap",
+   "category": "prop",
+   "size_m": {
+    "x": 0.75,
+    "y_height": 1.2,
+    "z": 0.574
+   },
+   "bbox_three": {
+    "min": [
+     -0.375,
+     0.0,
+     -0.25
+    ],
+    "max": [
+     0.375,
+     1.2,
+     0.324
+    ]
+   },
+   "tris": 208,
+   "materials": [
+    "concrete",
+    "metal_dark",
+    "water",
+    "steel_galv",
+    "alu",
+    "plastic",
+    "decal"
+   ],
+   "notes": "Cement wash sink 0.75 x 0.5 m, rim at 0.8 m, with a galvanised riser and brass tap at the back-left (tap 1.1 m). Back face at local z=-0.25: push it against a wall. Put yard_stain_splash + a step slab in front (+Z)."
+  },
+  {
+   "id": "yard_stain_puddle_a",
+   "node": "yard_stain_puddle_a",
+   "category": "decal",
+   "size_m": {
+    "x": 1.6,
+    "y_height": 0.0,
+    "z": 1.6
+   },
+   "bbox_three": {
+    "min": [
+     -0.8,
+     0.004,
+     -0.8
+    ],
+    "max": [
+     0.8,
+     0.004,
+     0.8
+    ]
+   },
+   "tris": 2,
+   "materials": [
+    "decal"
+   ],
+   "notes": "Ground decal 1.6 x 1.6 m at y=0.004 (alpha-blended; render with depthWrite=false + polygonOffset). On the walkway raise it to y=0.035."
+  },
+  {
+   "id": "yard_stain_puddle_b",
+   "node": "yard_stain_puddle_b",
+   "category": "decal",
+   "size_m": {
+    "x": 1.8,
+    "y_height": 0.0,
+    "z": 0.9
+   },
+   "bbox_three": {
+    "min": [
+     -0.9,
+     0.004,
+     -0.45
+    ],
+    "max": [
+     0.9,
+     0.004,
+     0.45
+    ]
+   },
+   "tris": 2,
+   "materials": [
+    "decal"
+   ],
+   "notes": "Ground decal 1.8 x 0.9 m at y=0.004 (alpha-blended; render with depthWrite=false + polygonOffset). On the walkway raise it to y=0.035."
+  },
+  {
+   "id": "yard_stain_soot",
+   "node": "yard_stain_soot",
+   "category": "decal",
+   "size_m": {
+    "x": 0.8,
+    "y_height": 0.0,
+    "z": 0.8
+   },
+   "bbox_three": {
+    "min": [
+     -0.4,
+     0.004,
+     -0.4
+    ],
+    "max": [
+     0.4,
+     0.004,
+     0.4
+    ]
+   },
+   "tris": 2,
+   "materials": [
+    "decal"
+   ],
+   "notes": "Ground decal 0.8 x 0.8 m at y=0.004 (alpha-blended; render with depthWrite=false + polygonOffset). On the walkway raise it to y=0.035."
+  },
+  {
+   "id": "yard_stain_splash",
+   "node": "yard_stain_splash",
+   "category": "decal",
+   "size_m": {
+    "x": 0.7,
+    "y_height": 0.0,
+    "z": 0.7
+   },
+   "bbox_three": {
+    "min": [
+     -0.35,
+     0.004,
+     -0.35
+    ],
+    "max": [
+     0.35,
+     0.004,
+     0.35
+    ]
+   },
+   "tris": 2,
+   "materials": [
+    "decal"
+   ],
+   "notes": "Ground decal 0.7 x 0.7 m at y=0.004 (alpha-blended; render with depthWrite=false + polygonOffset). On the walkway raise it to y=0.035."
+  },
+  {
+   "id": "yard_step_slab_a",
+   "node": "yard_step_slab_a",
+   "category": "ground",
+   "size_m": {
+    "x": 0.626,
+    "y_height": 0.077,
+    "z": 0.44
+   },
+   "bbox_three": {
+    "min": [
+     -0.31,
+     -0.04,
+     -0.22
+    ],
+    "max": [
+     0.316,
+     0.037,
+     0.22
+    ]
+   },
+   "tris": 72,
+   "materials": [
+    "walk"
+   ],
+   "notes": "Loose concrete stepping slab, top y=0.035. Lay a few across muddy spots (by the sink, toilet, tap)."
+  },
+  {
+   "id": "yard_step_slab_b",
+   "node": "yard_step_slab_b",
+   "category": "ground",
+   "size_m": {
+    "x": 0.523,
+    "y_height": 0.077,
+    "z": 0.5
+   },
+   "bbox_three": {
+    "min": [
+     -0.263,
+     -0.04,
+     -0.25
+    ],
+    "max": [
+     0.26,
+     0.037,
+     0.25
+    ]
+   },
+   "tris": 72,
+   "materials": [
+    "concrete"
+   ],
+   "notes": "Loose concrete stepping slab, top y=0.035. Lay a few across muddy spots (by the sink, toilet, tap)."
+  },
+  {
+   "id": "yard_table_plastic",
+   "node": "yard_table_plastic",
+   "category": "furniture",
+   "size_m": {
+    "x": 0.808,
+    "y_height": 0.72,
+    "z": 0.808
+   },
+   "bbox_three": {
+    "min": [
+     -0.404,
+     0.0,
+     -0.404
+    ],
+    "max": [
+     0.404,
+     0.72,
+     0.404
+    ]
+   },
+   "tris": 284,
+   "materials": [
+    "plastic",
+    "rubber"
+   ],
+   "notes": "White plastic garden table, 0.8 x 0.8 m top at 0.72 m, splayed legs, scuffed (grime baked into vertex colour)."
+  },
+  {
+   "id": "yard_tank_stand",
+   "node": "yard_tank_stand",
+   "category": "prop",
+   "size_m": {
+    "x": 1.1,
+    "y_height": 2.12,
+    "z": 1.2
+   },
+   "bbox_three": {
+    "min": [
+     -0.55,
+     0.0,
+     -0.55
+    ],
+    "max": [
+     0.55,
+     2.12,
+     0.65
+    ]
+   },
+   "tris": 766,
+   "materials": [
+    "metal_paint",
+    "wood",
+    "plastic",
+    "alu"
+   ],
+   "notes": "Black 1000 L ribbed plastic overhead tank on a 1.2 m angle-iron stand (1.0 x 1.0 m) with a grey PVC down-pipe and brass valve on the +Z side. ~2.1 m tall."
+  },
+  {
+   "id": "yard_toilet_block_front",
+   "node": "yard_toilet_block_front",
+   "category": "front",
+   "size_m": {
+    "x": 3.0,
+    "y_height": 3.05,
+    "z": 0.72
+   },
+   "bbox_three": {
+    "min": [
+     -1.5,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     1.5,
+     3.05,
+     0.5
+    ]
+   },
+   "tris": 560,
+   "materials": [
+    "plaster_paint",
+    "concrete",
+    "plaster_old",
+    "decal",
+    "metal_paint",
+    "metal_dark",
+    "steel_galv",
+    "plastic",
+    "emit_warm"
+   ],
+   "notes": "Shared toilet + bathroom block front, 3.0 m wide x 2.6 m tall x 0.22 m deep (same build as the room fronts, pale-blue paint). Two closed steel-sheet doors with louvred vents: BATHROOM at local x=-0.75 (green), TOILET at local x=+0.75 (blue), hand-painted signs, \"KEEP IT CLEAN!\" / \"NO BATHING AFTER 10PM\", concrete threshold step (0.34 m deep), PVC vent pipe, bulkhead lamp.",
+   "emissive": [
+    "emit_warm (bulkhead lamp)"
+   ],
+   "light_anchor": [
+    0,
+    2.32,
+    0.15
+   ],
+   "doors": {
+    "bathroom_x": -0.75,
+    "toilet_x": 0.75,
+    "width": 0.8,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "yard_walkway_1p5x2p2",
+   "node": "yard_walkway_1p5x2p2",
+   "category": "ground",
+   "size_m": {
+    "x": 1.508,
+    "y_height": 0.083,
+    "z": 2.193
+   },
+   "bbox_three": {
+    "min": [
+     -0.753,
+     -0.05,
+     -1.096
+    ],
+    "max": [
+     0.755,
+     0.033,
+     1.097
+    ]
+   },
+   "tris": 252,
+   "materials": [
+    "walk"
+   ],
+   "notes": "Old cracked cement walkway slab 1.5 (x) x 2.185 (z) m, top y=0.03. Chain along Z every 2.2 m (1.5 cm joints show between slabs).",
+   "tiling": "z:2.2"
+  },
+  {
+   "id": "yard_wall_3m",
+   "node": "yard_wall_3m",
+   "category": "wall",
+   "size_m": {
+    "x": 3.01,
+    "y_height": 2.25,
+    "z": 0.26
+   },
+   "bbox_three": {
+    "min": [
+     -1.505,
+     0.0,
+     -0.13
+    ],
+    "max": [
+     1.505,
+     2.25,
+     0.13
+    ]
+   },
+   "tris": 120,
+   "materials": [
+    "plaster_old",
+    "decal",
+    "concrete"
+   ],
+   "notes": "Full-height compound side wall, 3.0 m long, 0.2 m thick, 2.25 m to the top of the coping. Chain along X every 3 m; rotate pi/2 for walls that run along Z.",
+   "tiling": "x:3.0"
+  },
+  {
+   "id": "yard_wall_low_3m",
+   "node": "yard_wall_low_3m",
+   "category": "wall",
+   "size_m": {
+    "x": 3.01,
+    "y_height": 1.05,
+    "z": 0.26
+   },
+   "bbox_three": {
+    "min": [
+     -1.505,
+     0.0,
+     -0.13
+    ],
+    "max": [
+     1.505,
+     1.05,
+     0.13
+    ]
+   },
+   "tris": 84,
+   "materials": [
+    "plaster_old",
+    "decal",
+    "concrete"
+   ],
+   "notes": "Dwarf compound wall 3.0 m long (x -1.5..1.5), 0.2 m thick, 1.05 m to the top of the concrete coping. Rendered plaster with rising damp. Chain along X every 3 m (scale.x 0.9-1.1 is fine) and drop yard_wall_pillar_low at joints/ends.",
+   "tiling": "x:3.0"
+  },
+  {
+   "id": "yard_wall_pillar_low",
+   "node": "yard_wall_pillar_low",
+   "category": "wall",
+   "size_m": {
+    "x": 0.36,
+    "y_height": 1.26,
+    "z": 0.36
+   },
+   "bbox_three": {
+    "min": [
+     -0.18,
+     0.0,
+     -0.18
+    ],
+    "max": [
+     0.18,
+     1.26,
+     0.18
+    ]
+   },
+   "tris": 26,
+   "materials": [
+    "plaster_old",
+    "concrete",
+    "decal"
+   ],
+   "notes": "0.3 m square pillar for the dwarf wall, 1.26 m to the top of its cap. Put one at every yard_wall_low_3m joint and at both ends."
+  },
+  {
+   "id": "yard_water_drum",
+   "node": "yard_water_drum",
+   "category": "prop",
+   "size_m": {
+    "x": 0.488,
+    "y_height": 0.952,
+    "z": 0.484
+   },
+   "bbox_three": {
+    "min": [
+     -0.244,
+     0.003,
+     -0.242
+    ],
+    "max": [
+     0.244,
+     0.955,
+     0.242
+    ]
+   },
+   "tris": 1233,
+   "materials": [
+    "ph__Barrel_02__Barrel_02",
+    "plastic"
+   ],
+   "notes": "Blue 200 L plastic water drum (Poly Haven Barrel_02, CC0) with a red cup on the lid. 0.88 m tall."
+  },
+  {
+   "id": "yard_window_casement",
+   "node": "yard_window_casement",
+   "category": "window",
+   "size_m": {
+    "x": 1.02,
+    "y_height": 1.02,
+    "z": 0.12
+   },
+   "bbox_three": {
+    "min": [
+     -0.51,
+     -0.06,
+     -0.09
+    ],
+    "max": [
+     0.51,
+     0.96,
+     0.03
+    ]
+   },
+   "tris": 302,
+   "materials": [
+    "paint_wood",
+    "glass",
+    "alu",
+    "metal_paint"
+   ],
+   "notes": "Painted timber two-leaf casement window (3 panes per leaf) with a diamond-pattern burglar-bar grille on the wall face. Same origin/fit as yard_window_louvre (0.9 x 0.9 m opening)."
+  },
+  {
+   "id": "yard_window_louvre",
+   "node": "yard_window_louvre",
+   "category": "window",
+   "size_m": {
+    "x": 1.02,
+    "y_height": 1.02,
+    "z": 0.147
+   },
+   "bbox_three": {
+    "min": [
+     -0.51,
+     -0.06,
+     -0.117
+    ],
+    "max": [
+     0.51,
+     0.96,
+     0.03
+    ]
+   },
+   "tris": 696,
+   "materials": [
+    "alu",
+    "glass_louvre",
+    "metal_paint"
+   ],
+   "notes": "Aluminium louvre window (2 x 7 tilted glass blades) with a painted steel burglar-bar grille fixed on the wall face. Origin = bottom centre of the 0.9 x 0.9 m opening on the wall face; bars stand 3 cm proud (+Z), frame and blades sit 5-9 cm inside (-Z)."
+  }
+ ]
+}
