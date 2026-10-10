@@ -1,0 +1,1156 @@
+{
+ "hk_armchair": {
+  "category": "comfort",
+  "notes": "Armchair (Poly Haven ArmChair_01, CC0).",
+  "id": "hk_armchair",
+  "tris": 3012,
+  "bbox_blender": [
+   [
+    -0.39869797229766846,
+    -0.3591928780078888,
+    0.0
+   ],
+   [
+    0.39869797229766846,
+    0.3591928780078888,
+    1.0
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__ArmChair_01__Armchair_01"
+  ]
+ },
+ "hk_art_big": {
+  "category": "decor",
+  "notes": "Adire canvas 0.95 x 0.8 m (own art); back on the wall plane.",
+  "id": "hk_art_big",
+  "tris": 14,
+  "bbox_blender": [
+   [
+    -0.4749999940395355,
+    -0.0010000000474974513,
+    0.0
+   ],
+   [
+    0.4749999940395355,
+    0.029999999329447746,
+    0.800000011920929
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "hk_adire"
+  ]
+ },
+ "hk_art_small": {
+  "category": "decor",
+  "notes": "Framed print 0.4 x 0.5 m (own art); back on the wall plane.",
+  "id": "hk_art_small",
+  "tris": 14,
+  "bbox_blender": [
+   [
+    -0.20000000298023224,
+    -0.0010000000474974513,
+    0.0
+   ],
+   [
+    0.20000000298023224,
+    0.029999999329447746,
+    0.5
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "hk_print"
+  ]
+ },
+ "hk_bookshelf": {
+  "category": "skills",
+  "notes": "Bookshelf with books (Poly Haven wooden_bookshelf_worn, CC0, + own books).",
+  "id": "hk_bookshelf",
+  "tris": 3636,
+  "bbox_blender": [
+   [
+    -0.4999999701976776,
+    -0.20000000298023224,
+    0.0
+   ],
+   [
+    0.4999999701976776,
+    0.20000000298023224,
+    1.7999999523162842
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "ph__wooden_bookshelf_worn__wooden_bookshelf_worn"
+  ]
+ },
+ "hk_bucket_bowl": {
+  "category": "bath",
+  "notes": "Blue bucket of water + red bowl.",
+  "id": "hk_bucket_bowl",
+  "tris": 172,
+  "bbox_blender": [
+   [
+    -0.17000000178813934,
+    -0.17000000178813934,
+    0.0
+   ],
+   [
+    0.25999999046325684,
+    0.2199999988079071,
+    0.320000022649765
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "water"
+  ]
+ },
+ "hk_ceiling_fan": {
+  "category": "comfort",
+  "notes": "Ceiling fan body; hangs down from origin (ceiling); blades hk_ceiling_fan_blades at z=-0.44.",
+  "hub": [
+   0,
+   0,
+   -0.44
+  ],
+  "id": "hk_ceiling_fan",
+  "tris": 136,
+  "bbox_blender": [
+   [
+    -0.10000000149011612,
+    -0.09848077595233917,
+    -0.41999998688697815
+   ],
+   [
+    0.10000000149011612,
+    0.09848077595233917,
+    0.0
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "chrome"
+  ]
+ },
+ "hk_ceiling_fan_blades": {
+  "category": "part",
+  "notes": "Ceiling fan blades, spin about Z (three: Y).",
+  "id": "hk_ceiling_fan_blades",
+  "tris": 50,
+  "bbox_blender": [
+   [
+    -0.43699485063552856,
+    -0.6448972821235657,
+    -0.019999999552965164
+   ],
+   [
+    0.6800000071525574,
+    0.6448972821235657,
+    0.019999999552965164
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "plastic"
+  ]
+ },
+ "hk_console_tv": {
+  "category": "fun",
+  "notes": "Low TV cabinet 1.4 m (Poly Haven modern_wooden_cabinet, CC0) with a 32-inch flat TV and a console.",
+  "id": "hk_console_tv",
+  "tris": 6852,
+  "bbox_blender": [
+   [
+    -0.699999988079071,
+    -0.22500000894069672,
+    0.0
+   ],
+   [
+    0.699999988079071,
+    0.22499999403953552,
+    0.9800000190734863
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "screen_off",
+   "ph__modern_wooden_cabinet__modern_wooden_cabinet",
+   "ph__gaming_console__gaming_console"
+  ]
+ },
+ "hk_curtains": {
+  "category": "decor",
+  "notes": "Pair of curtains on a rod, 1.5 x 2.3 m; back on the wall plane.",
+  "id": "hk_curtains",
+  "tris": 62,
+  "bbox_blender": [
+   [
+    -0.75,
+    -0.11500000208616257,
+    0.05000000074505806
+   ],
+   [
+    0.75,
+    -0.04500000178813934,
+    2.312000036239624
+   ]
+  ],
+  "materials": [
+   "alu",
+   "linen"
+  ]
+ },
+ "hk_diesel_gen": {
+  "category": "power",
+  "notes": "Soundproof diesel generator canopy 2.0 x 1.0 x 1.2 m. Exhaust stack top-left.",
+  "exhaust": [
+   -0.7,
+   0.2,
+   1.4
+  ],
+  "id": "hk_diesel_gen",
+  "tris": 196,
+  "bbox_blender": [
+   [
+    -1.0,
+    -0.5,
+    0.0
+   ],
+   [
+    1.0,
+    0.5,
+    1.399999976158142
+   ]
+  ],
+  "materials": [
+   "metal_paint",
+   "metal_dark",
+   "plastic",
+   "emit_led"
+  ]
+ },
+ "hk_dining_set": {
+  "category": "kitchen",
+  "notes": "Dining table 1.2 m + 2 chairs (Poly Haven dining_table, dining_chair_02, CC0).",
+  "id": "hk_dining_set",
+  "tris": 7056,
+  "bbox_blender": [
+   [
+    -0.6000000238418579,
+    -0.8315327167510986,
+    0.0
+   ],
+   [
+    0.6000000238418579,
+    0.8315327167510986,
+    0.9500000476837158
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__dining_table__dining_table",
+   "ph__dining_chair_02__dining_chair_02"
+  ]
+ },
+ "hk_dumbbells": {
+  "category": "skills",
+  "notes": "Exercise mat + two dumbbells.",
+  "id": "hk_dumbbells",
+  "tris": 264,
+  "bbox_blender": [
+   [
+    -0.44999998807907104,
+    -0.25,
+    0.0
+   ],
+   [
+    0.44999998807907104,
+    0.25,
+    0.1300000101327896
+   ]
+  ],
+  "materials": [
+   "rubber",
+   "metal_dark",
+   "chrome"
+  ]
+ },
+ "hk_fan_blades": {
+  "category": "part",
+  "notes": "Standing-fan blades; spin about Y (three: Z) at origin.",
+  "id": "hk_fan_blades",
+  "tris": 50,
+  "bbox_blender": [
+   [
+    -0.1881384402513504,
+    -0.020000001415610313,
+    -0.22986532747745514
+   ],
+   [
+    0.20999999344348907,
+    0.020000001415610313,
+    0.22986532747745514
+   ]
+  ],
+  "materials": [
+   "plastic"
+  ]
+ },
+ "hk_floor_lamp": {
+  "category": "light",
+  "notes": "Floor lamp 1.6 m, fabric shade; light at z 1.4.",
+  "light": [
+   0,
+   0,
+   1.4
+  ],
+  "id": "hk_floor_lamp",
+  "tris": 142,
+  "bbox_blender": [
+   [
+    -0.20000000298023224,
+    -0.20000000298023224,
+    0.0
+   ],
+   [
+    0.20000000298023224,
+    0.20000000298023224,
+    1.5799999237060547
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "alu",
+   "fabric",
+   "emit_warm"
+  ]
+ },
+ "hk_foam_mattress": {
+  "category": "sleep",
+  "notes": "6-inch foam on the floor, blue cover, check sheet, pillows. 1.5 x 2.0 m.",
+  "id": "hk_foam_mattress",
+  "tris": 72,
+  "bbox_blender": [
+   [
+    -0.7200000286102295,
+    -0.9700000286102295,
+    0.0
+   ],
+   [
+    0.7200000286102295,
+    0.9700000286102295,
+    0.30000001192092896
+   ]
+  ],
+  "materials": [
+   "linen",
+   "hk_check"
+  ]
+ },
+ "hk_freezer": {
+  "category": "kitchen",
+  "notes": "Chest freezer 1.2 x 0.68 x 0.88 m.",
+  "id": "hk_freezer",
+  "tris": 48,
+  "bbox_blender": [
+   [
+    -0.6000000238418579,
+    -0.3700000047683716,
+    0.0
+   ],
+   [
+    0.6000000238418579,
+    0.3400000035762787,
+    0.8799999952316284
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "metal_dark"
+  ]
+ },
+ "hk_gas_cooker": {
+  "category": "kitchen",
+  "notes": "4-burner cooker with oven (Poly Haven electric_stove, CC0).",
+  "id": "hk_gas_cooker",
+  "tris": 5012,
+  "bbox_blender": [
+   [
+    -0.2692594528198242,
+    -0.34695568680763245,
+    0.0
+   ],
+   [
+    0.2692594826221466,
+    0.34695568680763245,
+    0.9200000166893005
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__electric_stove__electric_stove",
+   "ph__electric_stove__electric_stove_glass"
+  ]
+ },
+ "hk_guitar": {
+  "category": "skills",
+  "notes": "Acoustic guitar on a stand, ~1.05 m.",
+  "id": "hk_guitar",
+  "tris": 258,
+  "bbox_blender": [
+   [
+    -0.17000000178813934,
+    -0.07999999821186066,
+    0.0
+   ],
+   [
+    0.17000000178813934,
+    0.1300000101327896,
+    1.0499999523162842
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "wood"
+  ]
+ },
+ "hk_inverter": {
+  "category": "power",
+  "notes": "Inverter on a rack over two deep-cycle batteries.",
+  "id": "hk_inverter",
+  "tris": 108,
+  "bbox_blender": [
+   [
+    -0.5,
+    -0.20000000298023224,
+    0.0
+   ],
+   [
+    0.5,
+    0.20000000298023224,
+    0.8799999952316284
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "plastic",
+   "metal_paint",
+   "screen_off",
+   "emit_led"
+  ]
+ },
+ "hk_jerrycan": {
+  "category": "power",
+  "notes": "Fuel jerrycan (Poly Haven metal_jerrycan, CC0).",
+  "id": "hk_jerrycan",
+  "tris": 2511,
+  "bbox_blender": [
+   [
+    -0.17689082026481628,
+    -0.08707213401794434,
+    0.0
+   ],
+   [
+    0.17689082026481628,
+    0.08707213401794434,
+    0.4599999785423279
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__metal_jerrycan__metal_jerrycan"
+  ]
+ },
+ "hk_kerosene_stove": {
+  "category": "kitchen",
+  "notes": "Wick kerosene stove with a pot on it, 0.35 m.",
+  "id": "hk_kerosene_stove",
+  "tris": 274,
+  "bbox_blender": [
+   [
+    -0.17000000178813934,
+    -0.17000000178813934,
+    0.0
+   ],
+   [
+    0.2199999988079071,
+    0.17000000178813934,
+    0.4399999976158142
+   ]
+  ],
+  "materials": [
+   "metal_paint",
+   "steel_galv",
+   "metal_dark"
+  ]
+ },
+ "hk_laptop_desk": {
+  "category": "skills",
+  "notes": "Desk with laptop and chair (Poly Haven small_wooden_table_01, classic_laptop, monobloc, CC0).",
+  "id": "hk_laptop_desk",
+  "tris": 6509,
+  "bbox_blender": [
+   [
+    -0.5,
+    -0.8067524433135986,
+    0.0
+   ],
+   [
+    0.5,
+    0.2749999761581421,
+    0.9900000095367432
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__small_wooden_table_01__small_wooden_table_01",
+   "ph__classic_laptop__classic_laptop",
+   "ph__classic_laptop__classic_laptop_screen",
+   "ph__plastic_monobloc_chair_01__plastic_monobloc_chair_01"
+  ]
+ },
+ "hk_mirror": {
+  "category": "skills",
+  "notes": "Full-length wall mirror 0.54 x 1.6 m; back on the wall plane.",
+  "id": "hk_mirror",
+  "tris": 14,
+  "bbox_blender": [
+   [
+    -0.27000001072883606,
+    -0.0010000000474974513,
+    0.0
+   ],
+   [
+    0.27000001072883606,
+    0.05000000074505806,
+    1.600000023841858
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "mirror"
+  ]
+ },
+ "hk_mosquito_net": {
+  "category": "sleep",
+  "notes": "Box mosquito net over a 1.5 x 2.0 m bed, 1.9 m high (alpha \"net\").",
+  "id": "hk_mosquito_net",
+  "tris": 74,
+  "bbox_blender": [
+   [
+    -0.7559999823570251,
+    -1.0051960945129395,
+    0.25
+   ],
+   [
+    0.7559999823570251,
+    1.0051960945129395,
+    1.899999976158142
+   ]
+  ],
+  "materials": [
+   "net",
+   "plastic"
+  ]
+ },
+ "hk_petrol_gen": {
+  "category": "power",
+  "notes": "\"I better pass my neighbour\" petrol generator (Poly Haven portable_generator, CC0). Exhaust at the -X end.",
+  "exhaust": [
+   -0.42,
+   0,
+   0.3
+  ],
+  "id": "hk_petrol_gen",
+  "tris": 4011,
+  "bbox_blender": [
+   [
+    -0.42499998211860657,
+    -0.29148203134536743,
+    0.0
+   ],
+   [
+    0.42499998211860657,
+    0.29148203134536743,
+    0.5966294407844543
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__portable_generator__portable_generator",
+   "ph__portable_generator__portable_generator_glass"
+  ]
+ },
+ "hk_plant": {
+  "category": "decor",
+  "notes": "Potted plant (Poly Haven potted_plant_02, CC0).",
+  "id": "hk_plant",
+  "tris": 4011,
+  "bbox_blender": [
+   [
+    -0.43494004011154175,
+    -0.41012585163116455,
+    0.0
+   ],
+   [
+    0.43494006991386414,
+    0.41012585163116455,
+    1.0499999523162842
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__potted_plant_02__potted_plant_02_pot",
+   "ph__potted_plant_02__potted_plant_02_leaves"
+  ]
+ },
+ "hk_plastic_chair": {
+  "category": "comfort",
+  "notes": "Monobloc chair (Poly Haven, CC0).",
+  "id": "hk_plastic_chair",
+  "tris": 2412,
+  "bbox_blender": [
+   [
+    -0.3136933743953705,
+    -0.3067641854286194,
+    0.0
+   ],
+   [
+    0.3136933743953705,
+    0.3067641854286194,
+    0.85999995470047
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__plastic_monobloc_chair_01__plastic_monobloc_chair_01"
+  ]
+ },
+ "hk_rechargeable_lamp": {
+  "category": "light",
+  "notes": "Rechargeable lantern; light at z 0.18.",
+  "light": [
+   0,
+   0,
+   0.18
+  ],
+  "id": "hk_rechargeable_lamp",
+  "tris": 126,
+  "bbox_blender": [
+   [
+    -0.09000000357627869,
+    -0.05849567428231239,
+    0.0
+   ],
+   [
+    0.09000000357627869,
+    0.05849567428231239,
+    0.36000001430511475
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "glass_clear",
+   "emit_cool"
+  ]
+ },
+ "hk_rug": {
+  "category": "decor",
+  "notes": "Aso-oke stripe rug 2.0 x 1.5 m (own texture).",
+  "id": "hk_rug",
+  "tris": 2,
+  "bbox_blender": [
+   [
+    -1.0,
+    -0.75,
+    0.006000000052154064
+   ],
+   [
+    1.0,
+    0.75,
+    0.006000000052154064
+   ]
+  ],
+  "materials": [
+   "hk_rug"
+  ]
+ },
+ "hk_small_fridge": {
+  "category": "kitchen",
+  "notes": "Small double-door fridge 0.6 x 0.62 x 1.3 m.",
+  "id": "hk_small_fridge",
+  "tris": 72,
+  "bbox_blender": [
+   [
+    -0.30000001192092896,
+    -0.3499999940395355,
+    0.0
+   ],
+   [
+    0.30000001192092896,
+    0.3100000023841858,
+    1.2999999523162842
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "metal_dark",
+   "alu"
+  ]
+ },
+ "hk_sofa": {
+  "category": "comfort",
+  "notes": "Three-seater fabric sofa (Poly Haven sofa_02, CC0).",
+  "id": "hk_sofa",
+  "tris": 2740,
+  "bbox_blender": [
+   [
+    -1.0,
+    -0.4525045156478882,
+    0.0
+   ],
+   [
+    0.9999999403953552,
+    0.4525044858455658,
+    0.785194456577301
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__sofa_02__sofa_02"
+  ]
+ },
+ "hk_solar_kit": {
+  "category": "power",
+  "notes": "Solar battery cabinet + charge controller, one panel leaning (rest on the roof).",
+  "id": "hk_solar_kit",
+  "tris": 38,
+  "bbox_blender": [
+   [
+    -0.30000001192092896,
+    -0.44999998807907104,
+    0.0
+   ],
+   [
+    0.47999998927116394,
+    0.44999998807907104,
+    1.0
+   ]
+  ],
+  "materials": [
+   "metal_paint",
+   "screen_off",
+   "emit_led",
+   "glass"
+  ]
+ },
+ "hk_speaker": {
+  "category": "fun",
+  "notes": "Portable speaker (Poly Haven boombox, CC0).",
+  "id": "hk_speaker",
+  "tris": 2512,
+  "bbox_blender": [
+   [
+    -0.20999999344348907,
+    -0.054145000874996185,
+    0.0
+   ],
+   [
+    0.20999999344348907,
+    0.054145000874996185,
+    0.2730371654033661
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__boombox__boombox",
+   "ph__boombox__boombox_speakers"
+  ]
+ },
+ "hk_split_ac": {
+  "category": "comfort",
+  "notes": "Split AC indoor unit 0.9 x 0.22 x 0.3 m; back on the wall plane (y=+0.22 back), origin bottom.",
+  "id": "hk_split_ac",
+  "tris": 96,
+  "bbox_blender": [
+   [
+    -0.44999998807907104,
+    -0.004000000189989805,
+    0.0
+   ],
+   [
+    0.44999998807907104,
+    0.2199999988079071,
+    0.30000001192092896
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "emit_led"
+  ]
+ },
+ "hk_spring_bed": {
+  "category": "sleep",
+  "notes": "Wood frame double with leather headboard panel, spring mattress, pillows, check sheet. 1.5 x 2.0 m.",
+  "id": "hk_spring_bed",
+  "tris": 156,
+  "bbox_blender": [
+   [
+    -0.7799999713897705,
+    -1.0,
+    0.0
+   ],
+   [
+    0.7799999713897705,
+    1.0,
+    1.0499999523162842
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "hk_leather",
+   "linen",
+   "hk_check"
+  ]
+ },
+ "hk_standing_fan": {
+  "category": "comfort",
+  "notes": "Standing fan, white; blades are hk_fan_blades (spin about local Y at hub).",
+  "hub": [
+   0,
+   -0.07,
+   1.12
+  ],
+  "id": "hk_standing_fan",
+  "tris": 668,
+  "bbox_blender": [
+   [
+    -0.24399998784065247,
+    -0.20000000298023224,
+    0.0
+   ],
+   [
+    0.24399998784065247,
+    0.20000000298023224,
+    1.3639999628067017
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "chrome"
+  ]
+ },
+ "hk_tv_stand": {
+  "category": "fun",
+  "notes": "Low TV cabinet 1.4 m (Poly Haven modern_wooden_cabinet, CC0) with a 32-inch flat TV.",
+  "id": "hk_tv_stand",
+  "tris": 4026,
+  "bbox_blender": [
+   [
+    -0.699999988079071,
+    -0.22500000894069672,
+    0.0
+   ],
+   [
+    0.699999988079071,
+    0.22499999403953552,
+    0.9800000190734863
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "screen_off",
+   "ph__modern_wooden_cabinet__modern_wooden_cabinet"
+  ]
+ },
+ "hk_wardrobe": {
+  "category": "sleep",
+  "notes": "Two-door wardrobe 1.5 x 0.56 x 2.0 m.",
+  "id": "hk_wardrobe",
+  "tris": 72,
+  "bbox_blender": [
+   [
+    -0.7599999904632568,
+    -0.3100000023841858,
+    0.0
+   ],
+   [
+    0.7599999904632568,
+    0.30000001192092896,
+    2.0199999809265137
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "metal_dark",
+   "alu"
+  ]
+ },
+ "hk_wc_shower": {
+  "category": "bath",
+  "notes": "Corner shower tray with glass screen and chrome head + WC. 1.5 x 1.5 m.",
+  "id": "hk_wc_shower",
+  "tris": 252,
+  "bbox_blender": [
+   [
+    -0.75,
+    0.0,
+    0.0
+   ],
+   [
+    0.6499999761581421,
+    0.75,
+    2.069999933242798
+   ]
+  ],
+  "materials": [
+   "ceramic",
+   "metal_dark",
+   "glass_clear",
+   "alu",
+   "chrome"
+  ]
+ },
+ "kit_ceiling_light": {
+  "category": "kit",
+  "notes": "Round ceiling light (emit_warm), hangs below origin.",
+  "id": "kit_ceiling_light",
+  "tris": 116,
+  "bbox_blender": [
+   [
+    -0.1599999964237213,
+    -0.1599999964237213,
+    -0.050999999046325684
+   ],
+   [
+    0.1599999964237213,
+    0.1599999964237213,
+    0.0
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "emit_warm"
+  ]
+ },
+ "kit_door_flush": {
+  "category": "kit",
+  "notes": "Modern flush door 1.0 x 2.3 m, wood-look veneer, long chrome pull.",
+  "opening": [
+   1.08,
+   2.34
+  ],
+  "id": "kit_door_flush",
+  "tris": 60,
+  "bbox_blender": [
+   [
+    -0.5400000214576721,
+    -0.10000000149011612,
+    0.0
+   ],
+   [
+    0.5400000214576721,
+    0.10000000149011612,
+    2.3399999141693115
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "hk_laminate",
+   "chrome"
+  ]
+ },
+ "kit_door_panel": {
+  "category": "kit",
+  "notes": "Panelled hardwood door 0.9 x 2.1 m with frame (closed).",
+  "opening": [
+   1.02,
+   2.16
+  ],
+  "id": "kit_door_panel",
+  "tris": 130,
+  "bbox_blender": [
+   [
+    -0.5099999904632568,
+    -0.10000000149011612,
+    0.0
+   ],
+   [
+    0.5099999904632568,
+    0.10000000149011612,
+    2.1600000858306885
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "alu"
+  ]
+ },
+ "kit_downlight": {
+  "category": "kit",
+  "notes": "POP-ceiling downlight.",
+  "id": "kit_downlight",
+  "tris": 92,
+  "bbox_blender": [
+   [
+    -0.07000000029802322,
+    -0.07000000029802322,
+    -0.010999999940395355
+   ],
+   [
+    0.07000000029802322,
+    0.07000000029802322,
+    0.0
+   ]
+  ],
+  "materials": [
+   "alu",
+   "emit_warm"
+  ]
+ },
+ "kit_gate": {
+  "category": "kit",
+  "notes": "Sliding steel compound gate 4 m with rendered pillars.",
+  "id": "kit_gate",
+  "tris": 264,
+  "bbox_blender": [
+   [
+    -2.299999952316284,
+    -0.15000000596046448,
+    0.0
+   ],
+   [
+    2.299999952316284,
+    0.15000000596046448,
+    2.5
+   ]
+  ],
+  "materials": [
+   "plaster_paint",
+   "metal_paint"
+  ]
+ },
+ "kit_gatehouse": {
+  "category": "kit",
+  "notes": "Security post 1.8 x 1.8 x 2.8 m.",
+  "id": "kit_gatehouse",
+  "tris": 26,
+  "bbox_blender": [
+   [
+    -1.0499999523162842,
+    -1.0499999523162842,
+    0.0
+   ],
+   [
+    1.0499999523162842,
+    1.0499999523162842,
+    2.799999952316284
+   ]
+  ],
+  "materials": [
+   "plaster_paint",
+   "glass"
+  ]
+ },
+ "kit_pop_cornice": {
+  "category": "kit",
+  "notes": "1 m POP cornice strip; wall plane y=0, ceiling z=0; scale X to length.",
+  "id": "kit_pop_cornice",
+  "tris": 6,
+  "bbox_blender": [
+   [
+    0.0,
+    -0.11999999731779099,
+    -0.14000000059604645
+   ],
+   [
+    1.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "materials": [
+   "plaster_paint"
+  ]
+ },
+ "kit_stairs": {
+  "category": "kit",
+  "notes": "Straight stair 1.0 m wide, 14 risers to 2.8 m, going +Y, porcelain treads, chrome balusters.",
+  "id": "kit_stairs",
+  "tris": 392,
+  "bbox_blender": [
+   [
+    -0.5,
+    0.0,
+    0.0
+   ],
+   [
+    0.5,
+    3.7799999713897705,
+    3.6999998092651367
+   ]
+  ],
+  "materials": [
+   "hk_porcelain",
+   "chrome"
+  ]
+ },
+ "kit_window_burglar": {
+  "category": "kit",
+  "notes": "Louvre window 1.2 x 1.2 m, aluminium frame, glass blades, burglar-proof bars outside. Opening sill at z=0 (place at 0.95 m).",
+  "opening": [
+   1.2,
+   1.2
+  ],
+  "id": "kit_window_burglar",
+  "tris": 216,
+  "bbox_blender": [
+   [
+    -0.6499999761581421,
+    -0.12999999523162842,
+    -0.029999999329447746
+   ],
+   [
+    0.6499999761581421,
+    0.10000000149011612,
+    1.2000000476837158
+   ]
+  ],
+  "materials": [
+   "alu",
+   "glass_louvre",
+   "metal_paint",
+   "concrete"
+  ]
+ },
+ "kit_window_glass": {
+  "category": "kit",
+  "notes": "Floor-to-ceiling aluminium + glass 2.0 x 2.2 m (place at 0.1 m).",
+  "opening": [
+   2.0,
+   2.2
+  ],
+  "id": "kit_window_glass",
+  "tris": 64,
+  "bbox_blender": [
+   [
+    -1.0,
+    -0.029999999329447746,
+    0.0
+   ],
+   [
+    1.0,
+    0.029999999329447746,
+    2.200000047683716
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "glass_clear"
+  ]
+ }
+}

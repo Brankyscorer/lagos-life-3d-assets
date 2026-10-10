@@ -1,0 +1,26 @@
+{
+ "cement": {
+  "tile_m": 1.6
+ },
+ "tiles_ceramic": {
+  "tile_m": 1.9
+ },
+ "terrazzo": {
+  "tile_m": 2.0
+ },
+ "wood_look": {
+  "tile_m": 1.7
+ },
+ "porcelain_grey": {
+  "tile_m": 1.8
+ },
+ "marble": {
+  "tile_m": 2.4
+ },
+ "plaster": {
+  "tile_m": 2.0
+ },
+ "bathtile": {
+  "tile_m": 1.27
+ }
+}
