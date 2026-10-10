@@ -1,0 +1,497 @@
+{
+ "pack": "Lagos life-sim realistic NPC pedestrians",
+ "source": "Microsoft Rocketbox Avatar Library (MIT)",
+ "conventions": "glTF 2.0 binary, uncompressed (no Draco/meshopt; no decoder needed). Y-up, metres, faces +Z, origin on the floor between the feet. 80-bone Biped skeleton, same bone names as the player pack (Bip01_*). Walk is in place (move the NPC in code, ~1.3 m/s).",
+ "clips": {
+  "idle": "standing neutral idle (loop)",
+  "walk": "walk cycle in place (loop, 1.2 s)",
+  "talk": "gesturing conversation idle (loop)",
+  "sit": "seated idle, chair seat ~0.45 m (loop)",
+  "phone": "phone held to ear, talking (loop, no phone prop - attach to Bip01_R_Hand)"
+ },
+ "npcs": [
+  {
+   "id": "npc_01",
+   "file": "npc_01.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Professions/Business_Male_05",
+   "sex": "male",
+   "age_group": "adult (30s-40s)",
+   "outfit": "Black businessman: charcoal suit, purple shirt and tie, black shoes (banker/office worker)",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 668296,
+   "triangles": 4498,
+   "vertices": 2951,
+   "materials": [
+    "m016_body",
+    "m016_head"
+   ],
+   "height_m": 1.8,
+   "clip_durations_s": {
+    "idle": 7.67,
+    "phone": 9.47,
+    "sit": 5,
+    "talk": 6.33,
+    "walk": 1.2
+   },
+   "textures": [
+    "m016_body_normal 512x512 jpeg",
+    "m016_body_color 512x512 jpeg",
+    "m016_head_normal 512x512 jpeg",
+    "m016_head_color 512x512 jpeg"
+   ],
+   "size_mb": 0.67
+  },
+  {
+   "id": "npc_02",
+   "file": "npc_02.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Professions/Construction_Male_03",
+   "sex": "male",
+   "age_group": "adult (30s-40s)",
+   "outfit": "Black labourer/site worker: blue overalls, white hard hat, tool belt with hammer, work boots",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 841360,
+   "triangles": 4496,
+   "vertices": 3474,
+   "materials": [
+    "m102_body",
+    "m102_head",
+    "m102_helmet",
+    "m102_tools"
+   ],
+   "height_m": 1.84,
+   "clip_durations_s": {
+    "idle": 7.67,
+    "phone": 9.47,
+    "sit": 5,
+    "talk": 6.33,
+    "walk": 1.2
+   },
+   "textures": [
+    "m102_body_normal 512x512 jpeg",
+    "m102_body_color 512x512 jpeg",
+    "m102_head_normal 512x512 jpeg",
+    "m102_head_color 512x512 jpeg",
+    "m102_helmet_normal 512x512 jpeg",
+    "m102_helmet_color 512x512 jpeg",
+    "m102_tools_normal 512x512 jpeg",
+    "m102_tools_color 512x512 jpeg"
+   ],
+   "size_mb": 0.84
+  },
+  {
+   "id": "npc_03",
+   "file": "npc_03.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Adults/Male_Adult_18",
+   "sex": "male",
+   "age_group": "young adult (20s)",
+   "outfit": "Black young man: grey hoodie with hood up, white T-shirt, black trousers, trainers",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 670388,
+   "triangles": 4498,
+   "vertices": 2923,
+   "materials": [
+    "m023_body",
+    "m023_head"
+   ],
+   "height_m": 1.81,
+   "clip_durations_s": {
+    "idle": 7.67,
+    "phone": 9.47,
+    "sit": 5,
+    "talk": 6.33,
+    "walk": 1.2
+   },
+   "textures": [
+    "m023_body_normal 512x512 jpeg",
+    "m023_body_color 512x512 jpeg",
+    "m023_head_normal 512x512 jpeg",
+    "m023_head_color 512x512 jpeg"
+   ],
+   "size_mb": 0.67
+  },
+  {
+   "id": "npc_04",
+   "file": "npc_04.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Professions/Wood_Male_01",
+   "sex": "male",
+   "age_group": "adult (40s)",
+   "outfit": "Dark-skinned artisan/carpenter: beige cap, light-blue denim shirt, jeans, leather belt, brown shoes; light beard",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 704880,
+   "triangles": 4498,
+   "vertices": 2836,
+   "materials": [
+    "m110_body",
+    "m110_head"
+   ],
+   "height_m": 1.81,
+   "clip_durations_s": {
+    "idle": 7.67,
+    "phone": 9.47,
+    "sit": 5,
+    "talk": 6.33,
+    "walk": 1.2
+   },
+   "textures": [
+    "m110_body_normal 512x512 jpeg",
+    "m110_body_color 512x512 jpeg",
+    "m110_head_normal 512x512 jpeg",
+    "m110_head_color 512x512 jpeg"
+   ],
+   "size_mb": 0.7
+  },
+  {
+   "id": "npc_05",
+   "file": "npc_05.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Adults/Male_Adult_04",
+   "sex": "male",
+   "age_group": "young adult (20s)",
+   "outfit": "Brown-skinned young man with an afro: black jacket over grey hoodie, khaki trousers, trainers",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 1009584,
+   "triangles": 4498,
+   "vertices": 3130,
+   "materials": [
+    "m006_body",
+    "m006_head",
+    "m006_opacity"
+   ],
+   "height_m": 1.87,
+   "clip_durations_s": {
+    "idle": 7.67,
+    "phone": 9.47,
+    "sit": 5,
+    "talk": 6.33,
+    "walk": 1.2
+   },
+   "textures": [
+    "m006_body_normal 512x512 jpeg",
+    "m006_body_color 512x512 jpeg",
+    "m006_head_normal 512x512 jpeg",
+    "m006_head_color 512x512 jpeg",
+    "m006_opacity_color 512x512 png"
+   ],
+   "size_mb": 1.01
+  },
+  {
+   "id": "npc_06",
+   "file": "npc_06.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Professions/Sports_Male_03",
+   "sex": "male",
+   "age_group": "young adult (20s)",
+   "outfit": "Brown-skinned young man with long locs: black-and-white striped football jersey (#10), shorts, socks, boots (footballer/fan)",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 927012,
+   "triangles": 4520,
+   "vertices": 3541,
+   "materials": [
+    "m300_body",
+    "m300_head",
+    "m300_opacity"
+   ],
+   "height_m": 1.83,
+   "clip_durations_s": {
+    "idle": 7.67,
+    "phone": 9.47,
+    "sit": 5,
+    "talk": 6.33,
+    "walk": 1.2
+   },
+   "textures": [
+    "m300_body_normal 512x512 jpeg",
+    "m300_body_color 512x512 jpeg",
+    "m300_head_normal 512x512 jpeg",
+    "m300_head_color 512x512 jpeg",
+    "m300_opacity_color 512x512 png"
+   ],
+   "size_mb": 0.93
+  },
+  {
+   "id": "npc_07",
+   "file": "npc_07.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Professions/Police_Male_01",
+   "sex": "male",
+   "age_group": "adult (40s)",
+   "outfit": "Police officer: blue uniform shirt and trousers, peaked cap, duty belt with holstered pistol, boots; moustache (light-brown skin, South-Asian/North-African look)",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 840248,
+   "triangles": 4495,
+   "vertices": 3277,
+   "materials": [
+    "m220_body",
+    "m220_head",
+    "m220_equipment",
+    "m220_pistol"
+   ],
+   "height_m": 1.81,
+   "clip_durations_s": {
+    "idle": 7.67,
+    "phone": 9.47,
+    "sit": 5,
+    "talk": 6.33,
+    "walk": 1.2
+   },
+   "textures": [
+    "m220_body_normal 512x512 jpeg",
+    "m220_body_color 512x512 jpeg",
+    "m220_head_normal 512x512 jpeg",
+    "m220_head_color 512x512 jpeg",
+    "m220_equipment_normal 512x512 jpeg",
+    "m220_equipment_color 512x512 jpeg",
+    "m220_pistol_normal 512x512 jpeg",
+    "m220_pistol_color 512x512 jpeg"
+   ],
+   "size_mb": 0.84
+  },
+  {
+   "id": "npc_08",
+   "file": "npc_08.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Adults/Female_Party_02",
+   "sex": "female",
+   "age_group": "young adult (20s)",
+   "outfit": "Light-brown-skinned young woman with curly afro hair: patterned short-sleeve top, black mini skirt, strappy sandals (night-out/casual)",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 1057244,
+   "triangles": 4498,
+   "vertices": 3582,
+   "materials": [
+    "f022_body",
+    "f022_head",
+    "f022_opacity"
+   ],
+   "height_m": 1.79,
+   "clip_durations_s": {
+    "idle": 5.4,
+    "phone": 6,
+    "sit": 5.8,
+    "talk": 8.2,
+    "walk": 1.2
+   },
+   "textures": [
+    "f022_body_normal 512x512 jpeg",
+    "f022_body_color 512x512 jpeg",
+    "f022_head_normal 512x512 jpeg",
+    "f022_head_color 512x512 jpeg",
+    "f022_opacity_color 512x512 png"
+   ],
+   "size_mb": 1.06
+  },
+  {
+   "id": "npc_09",
+   "file": "npc_09.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Professions/Pilot_Female_02",
+   "sex": "female",
+   "age_group": "adult (30s)",
+   "outfit": "Black woman in uniform: white short-sleeve shirt with epaulettes, black trousers, peaked cap (airline staff/officer)",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 747388,
+   "triangles": 4518,
+   "vertices": 3041,
+   "materials": [
+    "f169_body",
+    "f169_head",
+    "f169_hat"
+   ],
+   "height_m": 1.77,
+   "clip_durations_s": {
+    "idle": 5.4,
+    "phone": 6,
+    "sit": 5.8,
+    "talk": 8.2,
+    "walk": 1.2
+   },
+   "textures": [
+    "f169_body_normal 512x512 jpeg",
+    "f169_body_color 512x512 jpeg",
+    "f169_head_normal 512x512 jpeg",
+    "f169_head_color 512x512 jpeg",
+    "f169_hat_normal 512x512 jpeg",
+    "f169_hat_color 512x512 jpeg"
+   ],
+   "size_mb": 0.75
+  },
+  {
+   "id": "npc_10",
+   "file": "npc_10.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Professions/Medical_Female_01",
+   "sex": "female",
+   "age_group": "adult (30s)",
+   "outfit": "Nurse: white tunic and trousers, white shoes, hair in a bun. Skin tone darkened by us to a West-African brown (texture edit)",
+   "skin_tone_modified": true,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 905668,
+   "triangles": 4496,
+   "vertices": 3022,
+   "materials": [
+    "f152_body",
+    "f152_head",
+    "f152_opacity"
+   ],
+   "height_m": 1.74,
+   "clip_durations_s": {
+    "idle": 5.4,
+    "phone": 6,
+    "sit": 5.8,
+    "talk": 8.2,
+    "walk": 1.2
+   },
+   "textures": [
+    "f152_body_normal 512x512 jpeg",
+    "f152_body_color 512x512 jpeg",
+    "f152_head_normal 512x512 jpeg",
+    "f152_head_color 512x512 jpeg",
+    "f152_opacity_color 512x512 png"
+   ],
+   "size_mb": 0.91
+  },
+  {
+   "id": "npc_11",
+   "file": "npc_11.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Adults/Female_Adult_06",
+   "sex": "female",
+   "age_group": "older adult (50s)",
+   "outfit": "Older woman: white hijab/veil, long olive kaftan-style tunic over trousers, flat shoes (Northern-Nigerian/Muslim look; light skin)",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 1058400,
+   "triangles": 4496,
+   "vertices": 2952,
+   "materials": [
+    "f202_body",
+    "f202_head",
+    "f202_opacity"
+   ],
+   "height_m": 1.73,
+   "clip_durations_s": {
+    "idle": 5.4,
+    "phone": 6,
+    "sit": 5.8,
+    "talk": 8.2,
+    "walk": 1.2
+   },
+   "textures": [
+    "f202_body_normal 512x512 jpeg",
+    "f202_body_color 512x512 jpeg",
+    "f202_head_normal 512x512 jpeg",
+    "f202_head_color 512x512 jpeg",
+    "f202_opacity_color 512x512 png"
+   ],
+   "size_mb": 1.06
+  },
+  {
+   "id": "npc_12",
+   "file": "npc_12.glb",
+   "source": "Microsoft Rocketbox Assets/Avatars/Adults/Female_Adult_11",
+   "sex": "female",
+   "age_group": "adult (30s)",
+   "outfit": "Woman in a brown long-sleeve knit dress with belt, tall brown boots, hair in a bun (light skin; could be a Lebanese-Nigerian or mixed Lagosian)",
+   "skin_tone_modified": false,
+   "clips": [
+    "idle",
+    "walk",
+    "talk",
+    "sit",
+    "phone"
+   ],
+   "size_bytes": 961020,
+   "triangles": 4498,
+   "vertices": 3617,
+   "materials": [
+    "f011_body",
+    "f011_head",
+    "f011_opacity"
+   ],
+   "height_m": 1.74,
+   "clip_durations_s": {
+    "idle": 5.4,
+    "phone": 6,
+    "sit": 5.8,
+    "talk": 8.2,
+    "walk": 1.2
+   },
+   "textures": [
+    "f011_body_normal 512x512 jpeg",
+    "f011_body_color 512x512 jpeg",
+    "f011_head_normal 512x512 jpeg",
+    "f011_head_color 512x512 jpeg",
+    "f011_opacity_color 512x512 png"
+   ],
+   "size_mb": 0.96
+  }
+ ]
+}

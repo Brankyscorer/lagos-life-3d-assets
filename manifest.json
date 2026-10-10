@@ -1,0 +1,14 @@
+{
+  "player_male_01": "characters/player_male_01.glb",
+  "player_female_01": "characters/player_female_01.glb",
+  "anim_idle": "characters/player_male_01.glb",
+  "anim_walk": "characters/player_male_01.glb",
+  "anim_run": "characters/player_male_01.glb",
+  "anim_sit": "characters/player_male_01.glb",
+  "anim_sleep": "characters/player_male_01.glb",
+  "anim_wash": "characters/player_male_01.glb",
+  "anim_eat": "characters/player_male_01.glb",
+  "anim_phone": "characters/player_male_01.glb",
+  "anim_wave": "characters/player_male_01.glb",
+  "env_interior": "env-day.hdr"
+}

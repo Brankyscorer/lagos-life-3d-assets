@@ -1,0 +1,1389 @@
+{
+ "name": "Lagos street environment kit",
+ "version": "1.0",
+ "units": "metres",
+ "up": "+Y",
+ "front": "+Z (street side)",
+ "origin": "ground level (y=0), footprint centre",
+ "compression": "none (no Draco / meshopt / KTX2 - plain GLTFLoader works)",
+ "vertex_colors": "COLOR_0 holds baked AO + grime; three.js applies it automatically (material.vertexColors is set by GLTFLoader)",
+ "kits": {
+  "env_buildings.glb": {
+   "category": "building",
+   "bytes": 5399292,
+   "nodes": [
+    "bld_bungalow_a",
+    "bld_bungalow_b",
+    "bld_church",
+    "bld_container_shop",
+    "bld_fence_gate",
+    "bld_fence_wall_3m",
+    "bld_fence_wall_3m_block",
+    "bld_flats3",
+    "bld_mosque",
+    "bld_shop2_a",
+    "bld_shop2_b"
+   ]
+  },
+  "env_street.glb": {
+   "category": "street",
+   "bytes": 3257112,
+   "nodes": [
+    "street_pothole_decal",
+    "street_road_10m",
+    "street_shoulder_laterite_10m",
+    "street_sidewalk_10m",
+    "street_speed_bump"
+   ]
+  },
+  "env_props.glb": {
+   "category": "prop",
+   "bytes": 4482656,
+   "nodes": [
+    "prop_bench",
+    "prop_chair_plastic_red",
+    "prop_chair_plastic_white",
+    "prop_electric_pole",
+    "prop_generator",
+    "prop_jerrycan",
+    "prop_kiosk",
+    "prop_pure_water_tray",
+    "prop_street_lamp",
+    "prop_transformer",
+    "prop_trash_heap",
+    "prop_umbrella",
+    "prop_water_drum",
+    "prop_wire_span_30m"
+   ]
+  },
+  "env_vehicles.glb": {
+   "category": "vehicle",
+   "bytes": 807988,
+   "nodes": [
+    "veh_danfo",
+    "veh_keke",
+    "veh_okada"
+   ]
+  }
+ },
+ "usage": "const g=await loader.loadAsync(kit_file); const obj=g.scene.getObjectByName(node).clone(); obj.position.set(x,0,z); scene.add(obj);",
+ "street_layout": {
+  "road": "street_road_10m every 10 m along X, z=0; edges at z=+-4.4",
+  "sidewalk": "street_sidewalk_10m at z=-5.4 (or +5.4)",
+  "shoulder": "street_shoulder_laterite_10m at z=+5.9",
+  "buildings_far_side": "z<=-8, rotY=0 (front +Z faces road)",
+  "buildings_near_side": "z>=+8, rotY=PI",
+  "poles": "prop_electric_pole every 25-35 m at |z|~5, prop_wire_span_30m from pole to pole",
+  "lamps": "prop_street_lamp at the verge, arm over the road",
+  "traffic": "Nigeria drives on the right: +X lane is z>0, -X lane is z<0"
+ },
+ "assets": [
+  {
+   "id": "bld_bungalow_a",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_bungalow_a",
+   "single_file": "singles/bld_bungalow_a.glb",
+   "size_m": {
+    "x": 15.47,
+    "y_height": 5.1,
+    "z": 11.54
+   },
+   "bbox_three": {
+    "min": [
+     -7.735,
+     0.0,
+     -5.535
+    ],
+    "max": [
+     7.735,
+     5.103,
+     6.0
+    ]
+   },
+   "tris": 2523,
+   "materials": [
+    "plaster_old",
+    "plaster_paint",
+    "atlas_glass",
+    "concrete",
+    "bars",
+    "atlas_sign",
+    "zinc_rusty",
+    "wood_planks",
+    "decal",
+    "plastic",
+    "cable",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_rusted_01",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_rusted_02"
+   ],
+   "single_bytes": 2223384,
+   "notes": "Front (street) faces +Z. Origin at ground centre. Plinth/floor top at 0.45 m; door centred on the front with steps protruding 1.2 m.",
+   "tiling": null,
+   "emissive": [],
+   "footprint": [
+    14.0,
+    9.6
+   ]
+  },
+  {
+   "id": "bld_bungalow_b",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_bungalow_b",
+   "single_file": "singles/bld_bungalow_b.glb",
+   "size_m": {
+    "x": 15.47,
+    "y_height": 5.1,
+    "z": 11.54
+   },
+   "bbox_three": {
+    "min": [
+     -7.735,
+     0.0,
+     -5.535
+    ],
+    "max": [
+     7.735,
+     5.103,
+     6.0
+    ]
+   },
+   "tris": 2074,
+   "materials": [
+    "plaster_old",
+    "plaster_paint",
+    "atlas_glass",
+    "concrete",
+    "bars",
+    "atlas_sign",
+    "zinc_galv",
+    "wood_planks",
+    "decal",
+    "plastic",
+    "cable"
+   ],
+   "single_bytes": 1523460,
+   "notes": "Front (street) faces +Z. Origin at ground centre. Plinth/floor top at 0.45 m; door centred on the front with steps protruding 1.2 m.",
+   "tiling": null,
+   "emissive": [],
+   "footprint": [
+    14.0,
+    9.6
+   ]
+  },
+  {
+   "id": "bld_church",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_church",
+   "single_file": "singles/bld_church.glb",
+   "size_m": {
+    "x": 11.0,
+    "y_height": 8.85,
+    "z": 17.8
+   },
+   "bbox_three": {
+    "min": [
+     -5.5,
+     0.0,
+     -8.5
+    ],
+    "max": [
+     5.5,
+     8.849,
+     9.3
+    ]
+   },
+   "tris": 1704,
+   "materials": [
+    "plaster_old",
+    "plaster_paint",
+    "atlas_glass",
+    "concrete",
+    "bars",
+    "atlas_sign",
+    "zinc_galv",
+    "wood_planks",
+    "metal_paint",
+    "decal"
+   ],
+   "single_bytes": 1558196,
+   "notes": "Gable end with double door, painted board and cross faces +Z (street). Porch steps protrude 1.2 m.",
+   "tiling": null,
+   "emissive": [],
+   "footprint": [
+    10.0,
+    16.0
+   ]
+  },
+  {
+   "id": "bld_container_shop",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_container_shop",
+   "single_file": "singles/bld_container_shop.glb",
+   "size_m": {
+    "x": 6.13,
+    "y_height": 2.87,
+    "z": 3.6
+   },
+   "bbox_three": {
+    "min": [
+     -3.042,
+     0.0,
+     -1.232
+    ],
+    "max": [
+     3.09,
+     2.87,
+     2.37
+    ]
+   },
+   "tris": 376,
+   "materials": [
+    "block",
+    "container",
+    "wood_planks",
+    "metal_paint",
+    "steel_galv",
+    "atlas_sign",
+    "emit_cool",
+    "decal"
+   ],
+   "single_bytes": 871532,
+   "notes": "20 ft container on blocks (floor at 0.22 m). Serving hatch + propped flap on the +Z side; counter at 1.17 m. Emissive tube light inside.",
+   "tiling": null,
+   "emissive": [
+    "emit_cool (tube light)"
+   ],
+   "footprint": [
+    6.06,
+    2.44
+   ]
+  },
+  {
+   "id": "bld_fence_gate",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_fence_gate",
+   "single_file": "singles/bld_fence_gate.glb",
+   "size_m": {
+    "x": 6.5,
+    "y_height": 2.95,
+    "z": 0.6
+   },
+   "bbox_three": {
+    "min": [
+     -3.25,
+     0.0,
+     -0.3
+    ],
+    "max": [
+     3.25,
+     2.95,
+     0.3
+    ]
+   },
+   "tris": 306,
+   "materials": [
+    "plaster_old",
+    "concrete",
+    "decal",
+    "metal_paint",
+    "bars",
+    "atlas_sign"
+   ],
+   "single_bytes": 733112,
+   "notes": "Gate unit 6.5 m wide incl. two 1 m wall stubs (ends at x=+-3.25). Leaves are part of the mesh (closed). Chain bld_fence_wall_3m from x=+3.25 (+1.5 offset).",
+   "tiling": "x:6.5",
+   "emissive": [],
+   "footprint": [
+    6.5,
+    0.6
+   ]
+  },
+  {
+   "id": "bld_fence_wall_3m",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_fence_wall_3m",
+   "single_file": "singles/bld_fence_wall_3m.glb",
+   "size_m": {
+    "x": 3.2,
+    "y_height": 2.53,
+    "z": 0.42
+   },
+   "bbox_three": {
+    "min": [
+     -1.7,
+     0.0,
+     -0.21
+    ],
+    "max": [
+     1.5,
+     2.53,
+     0.21
+    ]
+   },
+   "tris": 104,
+   "materials": [
+    "plaster_old",
+    "concrete",
+    "bars",
+    "decal"
+   ],
+   "single_bytes": 403444,
+   "notes": "Plastered (rendered) tiling fence: 3.0 m along X (three.js X), pillar at x=-1.5. Chain copies every 3.0 m; add one extra pillar at the end by placing the next segment or bld_fence_gate.",
+   "tiling": "x:3.0",
+   "emissive": [],
+   "footprint": [
+    3.0,
+    0.2
+   ]
+  },
+  {
+   "id": "bld_fence_wall_3m_block",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_fence_wall_3m_block",
+   "single_file": "singles/bld_fence_wall_3m_block.glb",
+   "size_m": {
+    "x": 3.2,
+    "y_height": 2.53,
+    "z": 0.42
+   },
+   "bbox_three": {
+    "min": [
+     -1.7,
+     0.0,
+     -0.21
+    ],
+    "max": [
+     1.5,
+     2.53,
+     0.21
+    ]
+   },
+   "tris": 106,
+   "materials": [
+    "block",
+    "concrete",
+    "plaster_old",
+    "bars",
+    "decal",
+    "atlas_sign"
+   ],
+   "single_bytes": 843848,
+   "notes": "Unplastered sandcrete-block fence with painted POST NO BILL. tiling fence: 3.0 m along X (three.js X), pillar at x=-1.5. Chain copies every 3.0 m; add one extra pillar at the end by placing the next segment or bld_fence_gate.",
+   "tiling": "x:3.0",
+   "emissive": [],
+   "footprint": [
+    3.0,
+    0.2
+   ]
+  },
+  {
+   "id": "bld_flats3",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_flats3",
+   "single_file": "singles/bld_flats3.glb",
+   "size_m": {
+    "x": 14.77,
+    "y_height": 12.3,
+    "z": 13.29
+   },
+   "bbox_three": {
+    "min": [
+     -7.387,
+     -0.055,
+     -6.06
+    ],
+    "max": [
+     7.387,
+     12.25,
+     7.23
+    ]
+   },
+   "tris": 4254,
+   "materials": [
+    "plaster_paint",
+    "atlas_glass",
+    "concrete",
+    "bars",
+    "atlas_sign",
+    "decal",
+    "fabric",
+    "cable",
+    "concrete_dirty",
+    "plaster_old",
+    "metal_paint",
+    "plastic",
+    "steel_galv",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_rusted_01",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_rusted_02"
+   ],
+   "single_bytes": 2698504,
+   "notes": "Three floors of 3.1 m (balconies on floors 1-2 project 1.2 m). Front faces +Z. Origin at ground centre.",
+   "tiling": null,
+   "emissive": [],
+   "footprint": [
+    14.0,
+    12.0
+   ]
+  },
+  {
+   "id": "bld_mosque",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_mosque",
+   "single_file": "singles/bld_mosque.glb",
+   "size_m": {
+    "x": 11.49,
+    "y_height": 12.18,
+    "z": 13.29
+   },
+   "bbox_three": {
+    "min": [
+     -5.56,
+     0.0,
+     -5.56
+    ],
+    "max": [
+     5.932,
+     12.178,
+     7.732
+    ]
+   },
+   "tris": 2780,
+   "materials": [
+    "plaster_old",
+    "plaster_paint",
+    "atlas_glass",
+    "concrete",
+    "bars",
+    "atlas_sign",
+    "concrete_dirty",
+    "metal_paint",
+    "steel_galv",
+    "plastic",
+    "decal"
+   ],
+   "single_bytes": 2192184,
+   "notes": "Green dome on a drum, minaret on the front-right corner (extends ~1 m past the footprint corner). Front faces +Z.",
+   "tiling": null,
+   "emissive": [],
+   "footprint": [
+    11.0,
+    11.0
+   ]
+  },
+  {
+   "id": "bld_shop2_a",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_shop2_a",
+   "single_file": "singles/bld_shop2_a.glb",
+   "size_m": {
+    "x": 12.63,
+    "y_height": 10.0,
+    "z": 11.72
+   },
+   "bbox_three": {
+    "min": [
+     -6.241,
+     0.0,
+     -5.392
+    ],
+    "max": [
+     6.387,
+     10.0,
+     6.33
+    ]
+   },
+   "tris": 2844,
+   "materials": [
+    "plaster_paint",
+    "shutter",
+    "metal_paint",
+    "atlas_sign",
+    "concrete_floor",
+    "atlas_glass",
+    "concrete",
+    "bars",
+    "concrete_dirty",
+    "plastic",
+    "plaster_old",
+    "decal",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_rusted_01",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_rusted_02"
+   ],
+   "single_bytes": 2771048,
+   "notes": "Ground-floor shops face +Z; first-floor slab/balcony cantilevers 1.3 m over the pavement. Roof tank and parapet on top. Origin at ground centre of the walls (cantilever extends to z=+6.3 in three.js).",
+   "tiling": null,
+   "emissive": [],
+   "footprint": [
+    12.0,
+    10.0
+   ]
+  },
+  {
+   "id": "bld_shop2_b",
+   "category": "building",
+   "kit_file": "env_buildings.glb",
+   "node": "bld_shop2_b",
+   "single_file": "singles/bld_shop2_b.glb",
+   "size_m": {
+    "x": 13.0,
+    "y_height": 10.0,
+    "z": 11.72
+   },
+   "bbox_three": {
+    "min": [
+     -6.613,
+     0.0,
+     -5.392
+    ],
+    "max": [
+     6.387,
+     10.0,
+     6.33
+    ]
+   },
+   "tris": 2824,
+   "materials": [
+    "plaster_paint",
+    "atlas_sign",
+    "concrete_floor",
+    "shutter",
+    "metal_paint",
+    "atlas_glass",
+    "concrete",
+    "bars",
+    "concrete_dirty",
+    "plastic",
+    "plaster_old",
+    "decal",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_01",
+    "ph__exterior_aircon_unit__exterior_aircon_unit_02"
+   ],
+   "single_bytes": 2741892,
+   "notes": "Ground-floor shops face +Z; first-floor slab/balcony cantilevers 1.3 m over the pavement. Roof tank and parapet on top. Origin at ground centre of the walls (cantilever extends to z=+6.3 in three.js).",
+   "tiling": null,
+   "emissive": [],
+   "footprint": [
+    12.0,
+    10.0
+   ]
+  },
+  {
+   "id": "prop_bench",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_bench",
+   "single_file": "singles/prop_bench.glb",
+   "size_m": {
+    "x": 1.17,
+    "y_height": 0.89,
+    "z": 0.5
+   },
+   "bbox_three": {
+    "min": [
+     -0.576,
+     -0.0,
+     -0.254
+    ],
+    "max": [
+     0.589,
+     0.889,
+     0.243
+    ]
+   },
+   "tris": 630,
+   "materials": [
+    "ph__painted_wooden_bench__painted_wooden_bench"
+   ],
+   "single_bytes": 201492,
+   "notes": "Painted wooden bench with back (Poly Haven CC0).",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_chair_plastic_red",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_chair_plastic_red",
+   "single_file": "singles/prop_chair_plastic_red.glb",
+   "size_m": {
+    "x": 0.65,
+    "y_height": 0.88,
+    "z": 0.63
+   },
+   "bbox_three": {
+    "min": [
+     -0.323,
+     -0.0,
+     -0.336
+    ],
+    "max": [
+     0.323,
+     0.881,
+     0.292
+    ]
+   },
+   "tris": 1200,
+   "materials": [
+    "ph__plastic_monobloc_chair_01__plastic_monobloc_chair_01"
+   ],
+   "single_bytes": 361544,
+   "notes": "Monobloc plastic chair (Poly Haven CC0, decimated), seat height ~0.45 m. Colour comes from vertex colours over the white texture.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_chair_plastic_white",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_chair_plastic_white",
+   "single_file": "singles/prop_chair_plastic_white.glb",
+   "size_m": {
+    "x": 0.65,
+    "y_height": 0.88,
+    "z": 0.63
+   },
+   "bbox_three": {
+    "min": [
+     -0.323,
+     -0.0,
+     -0.336
+    ],
+    "max": [
+     0.323,
+     0.881,
+     0.292
+    ]
+   },
+   "tris": 1200,
+   "materials": [
+    "ph__plastic_monobloc_chair_01__plastic_monobloc_chair_01"
+   ],
+   "single_bytes": 361552,
+   "notes": "Monobloc plastic chair (Poly Haven CC0, decimated), seat height ~0.45 m. Colour comes from vertex colours over the white texture.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_electric_pole",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_electric_pole",
+   "single_file": "singles/prop_electric_pole.glb",
+   "size_m": {
+    "x": 3.66,
+    "y_height": 9.0,
+    "z": 8.11
+   },
+   "bbox_three": {
+    "min": [
+     -1.826,
+     0.0,
+     -4.203
+    ],
+    "max": [
+     1.835,
+     9.0,
+     3.907
+    ]
+   },
+   "tris": 848,
+   "materials": [
+    "wood",
+    "metal_paint",
+    "steel_galv",
+    "ceramic",
+    "cable",
+    "atlas_sign"
+   ],
+   "single_bytes": 505712,
+   "notes": "Wooden distribution pole, 9 m. HT crossarm at 8.5 m (insulator tops at y offsets -1.05/0/+1.05 in three.js Z), LT crossarm at 7.4 m (4 conductors at three.js z offsets -0.75,-0.25,0.25,0.75, height 7.28). Service drops hang toward +-Z. Spacing 25-35 m; use prop_wire_span_30m between poles.",
+   "tiling": null,
+   "emissive": [],
+   "attach": {
+    "ht_z": 8.68,
+    "ht_offsets": [
+     -1.05,
+     0,
+     1.05
+    ],
+    "lt_z": 7.28,
+    "lt_offsets": [
+     -0.75,
+     -0.25,
+     0.25,
+     0.75
+    ]
+   }
+  },
+  {
+   "id": "prop_generator",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_generator",
+   "single_file": "singles/prop_generator.glb",
+   "size_m": {
+    "x": 0.82,
+    "y_height": 0.58,
+    "z": 0.57
+   },
+   "bbox_three": {
+    "min": [
+     -0.415,
+     -0.0,
+     -0.283
+    ],
+    "max": [
+     0.407,
+     0.577,
+     0.283
+    ]
+   },
+   "tris": 2600,
+   "materials": [
+    "ph__portable_generator__portable_generator",
+    "ph__portable_generator__portable_generator_glass"
+   ],
+   "single_bytes": 601512,
+   "notes": "Small petrol generator (\"I better pass my neighbour\" size). Poly Haven CC0, decimated.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_jerrycan",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_jerrycan",
+   "single_file": "singles/prop_jerrycan.glb",
+   "size_m": {
+    "x": 0.27,
+    "y_height": 0.32,
+    "z": 0.34
+   },
+   "bbox_three": {
+    "min": [
+     -0.135,
+     -0.0,
+     -0.166
+    ],
+    "max": [
+     0.133,
+     0.318,
+     0.173
+    ]
+   },
+   "tris": 1100,
+   "materials": [
+    "ph__plastic_jerrycan__plastic_jerrycan"
+   ],
+   "single_bytes": 377788,
+   "notes": "25 L yellow jerrycan (\"kegs\"). Poly Haven CC0 model, recoloured, decimated.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_kiosk",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_kiosk",
+   "single_file": "singles/prop_kiosk.glb",
+   "size_m": {
+    "x": 2.4,
+    "y_height": 2.65,
+    "z": 2.45
+   },
+   "bbox_three": {
+    "min": [
+     -1.2,
+     0.0,
+     -0.85
+    ],
+    "max": [
+     1.2,
+     2.65,
+     1.6
+    ]
+   },
+   "tris": 274,
+   "materials": [
+    "wood",
+    "wood_planks",
+    "atlas_sign",
+    "zinc_rusty",
+    "emit_cool",
+    "decal"
+   ],
+   "single_bytes": 1090968,
+   "notes": "Painted wooden kiosk on short legs, serving hatch + counter on +Z, rusty zinc canopy overhangs 0.9 m to +Z. Emissive tube light under the canopy.",
+   "tiling": null,
+   "emissive": [
+    "emit_cool (tube light)"
+   ],
+   "light_anchor": [
+    0,
+    2.35,
+    1.18
+   ]
+  },
+  {
+   "id": "prop_pure_water_tray",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_pure_water_tray",
+   "single_file": "singles/prop_pure_water_tray.glb",
+   "size_m": {
+    "x": 0.64,
+    "y_height": 0.12,
+    "z": 0.64
+   },
+   "bbox_three": {
+    "min": [
+     -0.32,
+     0.0,
+     -0.32
+    ],
+    "max": [
+     0.32,
+     0.115,
+     0.32
+    ]
+   },
+   "tris": 326,
+   "materials": [
+    "steel_galv",
+    "atlas_sign"
+   ],
+   "single_bytes": 271316,
+   "notes": "Hawker's aluminium tray stacked with 50 cl \"pure water\" sachets. Put it on a stool/table, or on an NPC's head (top of head + 0.02 m).",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_street_lamp",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_street_lamp",
+   "single_file": "singles/prop_street_lamp.glb",
+   "size_m": {
+    "x": 1.0,
+    "y_height": 8.62,
+    "z": 2.5
+   },
+   "bbox_three": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.397
+    ],
+    "max": [
+     0.5,
+     8.624,
+     2.1
+    ]
+   },
+   "tris": 132,
+   "materials": [
+    "steel_galv",
+    "concrete",
+    "metal_dark",
+    "emit_warm",
+    "glass"
+   ],
+   "single_bytes": 72592,
+   "notes": "Solar LED street light, 8 m pole, arm reaches 1.75 m toward +Z (place on the verge, arm over the road). Bulb is the emit_warm quad at about y=8.07, z=+1.75 in three.js.",
+   "tiling": null,
+   "emissive": [
+    "emit_warm (lamp head)"
+   ],
+   "light_anchor": [
+    0,
+    8.05,
+    1.75
+   ]
+  },
+  {
+   "id": "prop_transformer",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_transformer",
+   "single_file": "singles/prop_transformer.glb",
+   "size_m": {
+    "x": 4.0,
+    "y_height": 9.0,
+    "z": 1.16
+   },
+   "bbox_three": {
+    "min": [
+     -2.0,
+     0.0,
+     -0.6
+    ],
+    "max": [
+     2.0,
+     9.0,
+     0.56
+    ]
+   },
+   "tris": 792,
+   "materials": [
+    "concrete",
+    "metal_paint",
+    "ceramic",
+    "steel_galv",
+    "cable",
+    "atlas_sign",
+    "decal"
+   ],
+   "single_bytes": 611432,
+   "notes": "H-frame pole-mounted distribution transformer (11 kV / 415 V) on two concrete poles 3 m apart, platform at 3.6 m, feeder pillar at the right foot. Front faces +Z.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_trash_heap",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_trash_heap",
+   "single_file": "singles/prop_trash_heap.glb",
+   "size_m": {
+    "x": 2.79,
+    "y_height": 0.61,
+    "z": 2.35
+   },
+   "bbox_three": {
+    "min": [
+     -1.438,
+     -0.006,
+     -1.201
+    ],
+    "max": [
+     1.356,
+     0.607,
+     1.154
+    ]
+   },
+   "tris": 2265,
+   "materials": [
+    "dirt",
+    "atlas_sign",
+    "ph__trashbag__trashbag",
+    "ph__cardboard_box_01__cardboard_box_01",
+    "ph__plastic_crate_01__plastic_crate_01"
+   ],
+   "single_bytes": 1196540,
+   "notes": "Small roadside refuse heap: dirt mound, black bin bag, soggy carton, plastic crate, empty water sachets. Keep it subtle (by a drain or a fence corner).",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_umbrella",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_umbrella",
+   "single_file": "singles/prop_umbrella.glb",
+   "size_m": {
+    "x": 2.7,
+    "y_height": 2.35,
+    "z": 2.7
+   },
+   "bbox_three": {
+    "min": [
+     -1.35,
+     -0.004,
+     -1.35
+    ],
+    "max": [
+     1.35,
+     2.35,
+     1.35
+    ]
+   },
+   "tris": 615,
+   "materials": [
+    "steel_galv",
+    "concrete",
+    "atlas_fabric",
+    "fabric",
+    "ph__old_tyre__old_tyre"
+   ],
+   "single_bytes": 542268,
+   "notes": "Branded canvas trader umbrella (fictional brands) on a steel pole set in a concrete-filled old tyre.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_water_drum",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_water_drum",
+   "single_file": "singles/prop_water_drum.glb",
+   "size_m": {
+    "x": 0.49,
+    "y_height": 0.88,
+    "z": 0.48
+   },
+   "bbox_three": {
+    "min": [
+     -0.244,
+     0.003,
+     -0.242
+    ],
+    "max": [
+     0.244,
+     0.885,
+     0.242
+    ]
+   },
+   "tris": 1199,
+   "materials": [
+    "ph__Barrel_02__Barrel_02"
+   ],
+   "single_bytes": 262916,
+   "notes": "Blue plastic water drum (Poly Haven Barrel_02, CC0).",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "prop_wire_span_30m",
+   "category": "prop",
+   "kit_file": "env_props.glb",
+   "node": "prop_wire_span_30m",
+   "single_file": "singles/prop_wire_span_30m.glb",
+   "size_m": {
+    "x": 30.0,
+    "y_height": 2.31,
+    "z": 2.11
+   },
+   "bbox_three": {
+    "min": [
+     -0.001,
+     6.372,
+     -1.056
+    ],
+    "max": [
+     30.001,
+     8.686,
+     1.056
+    ]
+   },
+   "tris": 1120,
+   "materials": [
+    "cable",
+    "steel_galv"
+   ],
+   "single_bytes": 47552,
+   "notes": "Starts at x=0 on one pole and ends at x=30 on the next (pole origins). 4 sagging LT conductors (sag 0.9 m) + 3 HT conductors (sag 0.6 m). For other spans set scale.x = span/30 and rotate about Y to aim at the next pole.",
+   "tiling": "x:30 (scale to pole spacing)",
+   "emissive": []
+  },
+  {
+   "id": "street_pothole_decal",
+   "category": "street",
+   "kit_file": "env_street.glb",
+   "node": "street_pothole_decal",
+   "single_file": "singles/street_pothole_decal.glb",
+   "size_m": {
+    "x": 1.4,
+    "y_height": 0.0,
+    "z": 1.12
+   },
+   "bbox_three": {
+    "min": [
+     -0.7,
+     0.0,
+     -0.56
+    ],
+    "max": [
+     0.7,
+     0.0,
+     0.56
+    ]
+   },
+   "tris": 16,
+   "materials": [
+    "decal"
+   ],
+   "single_bytes": 173152,
+   "notes": "Alpha-blended decal (1.4 x 1.1 m). Place 0.01 m above the road surface (road crown is +0.05 at the centre line, 0 at the kerbs); use polygonOffset/renderOrder like other decals.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "street_road_10m",
+   "category": "street",
+   "kit_file": "env_street.glb",
+   "node": "street_road_10m",
+   "single_file": "singles/street_road_10m.glb",
+   "size_m": {
+    "x": 10.0,
+    "y_height": 0.8,
+    "z": 8.8
+   },
+   "bbox_three": {
+    "min": [
+     -5.0,
+     -0.55,
+     -4.4
+    ],
+    "max": [
+     5.0,
+     0.25,
+     4.4
+    ]
+   },
+   "tris": 306,
+   "materials": [
+    "asphalt",
+    "concrete",
+    "concrete_dirty",
+    "dirt",
+    "glass",
+    "decal"
+   ],
+   "single_bytes": 2128632,
+   "notes": "Road runs along X. Copy every 10 m along X. Carriageway 7.0 m (z -3.5..3.5, crown +0.05). Kerb 0.15 high, open drain 0.6 wide x 0.7 deep, outer drain wall top at 0.15; total width 8.8 m (edges at z=+-4.4 in three.js). Slab crossings at x=+1.6 (+Z side) and x=-2.4 (-Z side).",
+   "tiling": "x:10.0",
+   "emissive": []
+  },
+  {
+   "id": "street_shoulder_laterite_10m",
+   "category": "street",
+   "kit_file": "env_street.glb",
+   "node": "street_shoulder_laterite_10m",
+   "single_file": "singles/street_shoulder_laterite_10m.glb",
+   "size_m": {
+    "x": 10.0,
+    "y_height": 0.14,
+    "z": 3.0
+   },
+   "bbox_three": {
+    "min": [
+     -5.0,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     5.0,
+     0.145,
+     1.5
+    ]
+   },
+   "tris": 68,
+   "materials": [
+    "laterite"
+   ],
+   "single_bytes": 971108,
+   "notes": "Red laterite verge, 10 x 3 m, top ~0.13 m (+-0.035 bumps, flat edges). Place beside the road edge (|z| = 4.4 + 1.5) or between road and buildings.",
+   "tiling": "x:10.0",
+   "emissive": []
+  },
+  {
+   "id": "street_sidewalk_10m",
+   "category": "street",
+   "kit_file": "env_street.glb",
+   "node": "street_sidewalk_10m",
+   "single_file": "singles/street_sidewalk_10m.glb",
+   "size_m": {
+    "x": 10.0,
+    "y_height": 0.16,
+    "z": 2.0
+   },
+   "bbox_three": {
+    "min": [
+     -5.0,
+     0.0,
+     -1.0
+    ],
+    "max": [
+     5.0,
+     0.156,
+     1.0
+    ]
+   },
+   "tris": 46,
+   "materials": [
+    "sidewalk",
+    "concrete",
+    "decal"
+   ],
+   "single_bytes": 371420,
+   "notes": "Concrete paver walkway 10 x 2 m, top at 0.15 m (level with the drain wall). Place outside the road at |z| = 4.4 + 1.0.",
+   "tiling": "x:10.0",
+   "emissive": []
+  },
+  {
+   "id": "street_speed_bump",
+   "category": "street",
+   "kit_file": "env_street.glb",
+   "node": "street_speed_bump",
+   "single_file": "singles/street_speed_bump.glb",
+   "size_m": {
+    "x": 7.0,
+    "y_height": 0.12,
+    "z": 1.4
+   },
+   "bbox_three": {
+    "min": [
+     -3.5,
+     0.0,
+     -0.7
+    ],
+    "max": [
+     3.5,
+     0.124,
+     0.7
+    ]
+   },
+   "tris": 190,
+   "materials": [
+    "asphalt",
+    "decal"
+   ],
+   "single_bytes": 1195872,
+   "notes": "Rounded asphalt hump 7.0 m long (spans the carriageway along X... rotate 90 deg so it crosses the road), 1.4 m wide, 0.12 m high, worn yellow paint.",
+   "tiling": null,
+   "emissive": []
+  },
+  {
+   "id": "veh_danfo",
+   "category": "vehicle",
+   "kit_file": "env_vehicles.glb",
+   "node": "veh_danfo",
+   "single_file": "singles/veh_danfo.glb",
+   "size_m": {
+    "x": 2.39,
+    "y_height": 2.42,
+    "z": 4.74
+   },
+   "bbox_three": {
+    "min": [
+     -1.195,
+     -0.0,
+     -2.372
+    ],
+    "max": [
+     1.195,
+     2.42,
+     2.372
+    ]
+   },
+   "tris": 2336,
+   "materials": [
+    "car_paint",
+    "metal_dark",
+    "cable",
+    "glass",
+    "decal",
+    "emit_warm",
+    "atlas_sign",
+    "chrome",
+    "atlas_lens",
+    "steel_galv",
+    "fabric",
+    "rubber"
+   ],
+   "single_bytes": 582360,
+   "notes": "Yellow danfo minibus (VW T3 / Type 25 shape) with black stripes, roof rack and rear ladder. Front faces +Z, origin on the ground at the body centre. Wheels are part of the mesh (front axle z=+1.30, rear z=-1.16, radius 0.325): spin them in code only if you split them out. Head/tail lights use the atlas_lens material (emissive texture; set emissiveIntensity >0 at night).",
+   "tiling": null,
+   "emissive": [
+    "atlas_lens (head/tail lamps, emissiveIntensity 0 by day)",
+    "emit_warm (indicators)"
+   ]
+  },
+  {
+   "id": "veh_keke",
+   "category": "vehicle",
+   "kit_file": "env_vehicles.glb",
+   "node": "veh_keke",
+   "single_file": "singles/veh_keke.glb",
+   "size_m": {
+    "x": 1.34,
+    "y_height": 1.7,
+    "z": 2.64
+   },
+   "bbox_three": {
+    "min": [
+     -0.67,
+     0.006,
+     -1.292
+    ],
+    "max": [
+     0.67,
+     1.71,
+     1.347
+    ]
+   },
+   "tris": 1550,
+   "materials": [
+    "car_paint",
+    "metal_dark",
+    "rubber",
+    "chrome",
+    "atlas_lens",
+    "emit_warm",
+    "glass",
+    "cable",
+    "fabric",
+    "atlas_sign",
+    "steel_galv"
+   ],
+   "single_bytes": 354680,
+   "notes": "Keke NAPEP / Bajaj RE-style auto-rickshaw, yellow with green stripe, black canvas roof. Front faces +Z. Single front wheel at z=+1.10, rear axle at z=-0.72 (track 1.2 m).",
+   "tiling": null,
+   "emissive": [
+    "atlas_lens (head/tail lamp)"
+   ]
+  },
+  {
+   "id": "veh_okada",
+   "category": "vehicle",
+   "kit_file": "env_vehicles.glb",
+   "node": "veh_okada",
+   "single_file": "singles/veh_okada.glb",
+   "size_m": {
+    "x": 0.85,
+    "y_height": 1.3,
+    "z": 1.96
+   },
+   "bbox_three": {
+    "min": [
+     -0.382,
+     0.003,
+     -0.97
+    ],
+    "max": [
+     0.47,
+     1.305,
+     0.986
+    ]
+   },
+   "tris": 1570,
+   "materials": [
+    "rubber",
+    "chrome",
+    "metal_dark",
+    "car_paint",
+    "atlas_lens",
+    "emit_warm",
+    "fabric",
+    "atlas_sign"
+   ],
+   "single_bytes": 348660,
+   "notes": "Okada (Bajaj Boxer-style 150 cc commuter bike), red/black, side stand down (modelled upright). Front faces +Z. Seat top ~0.88 m; rider pelvis ~0.95 m.",
+   "tiling": null,
+   "emissive": [
+    "atlas_lens (headlamp)",
+    "emit_warm (indicators, tail lamp)"
+   ]
+  }
+ ]
+}

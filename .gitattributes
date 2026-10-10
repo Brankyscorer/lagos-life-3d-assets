@@ -1,0 +1,10 @@
+*.glb binary
+*.gltf text eol=lf
+*.bin binary
+*.hdr binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.ktx2 binary
+*.json text eol=lf
+*.md text eol=lf
