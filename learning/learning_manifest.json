@@ -1,0 +1,281 @@
+{
+ "lk_bench": {
+  "category": "learning",
+  "notes": "Lecture bench 3.0 m: laminate writing desk + 4 school chairs; students sit at seats (x, y, seat z) facing -Y.",
+  "seats": [
+   [
+    -1.125,
+    0.12,
+    0.45
+   ],
+   [
+    -0.375,
+    0.12,
+    0.45
+   ],
+   [
+    0.375,
+    0.12,
+    0.45
+   ],
+   [
+    1.125,
+    0.12,
+    0.45
+   ]
+  ],
+  "id": "lk_bench",
+  "tris": 6572,
+  "bbox_blender": [
+   [
+    -1.5,
+    -0.6399999856948853,
+    -0.001708600320853293
+   ],
+   [
+    1.5,
+    0.45883968472480774,
+    1.0049850940704346
+   ]
+  ],
+  "materials": [
+   "hk_laminate",
+   "metal_paint",
+   "ph__SchoolChair_01__SchoolChair_01",
+   "ph__office_notepads__office_notepads",
+   "ph__stationery_supplies__stationery_supplies"
+  ]
+ },
+ "lk_easel": {
+  "category": "furniture",
+  "notes": "Sketchbook easel 0.7 x 0.9 m: pine A-frame, open sketch pad with charcoal strokes, stool in front (artist sits at -Y facing +Y), pencil cup.",
+  "id": "lk_easel",
+  "tris": 219,
+  "bbox_blender": [
+   [
+    -0.3199999928474426,
+    -0.7100000381469727,
+    -0.004718497395515442
+   ],
+   [
+    0.3199999928474426,
+    0.6142385601997375,
+    1.5283660888671875
+   ]
+  ],
+  "materials": [
+   "wood",
+   "paint_wood",
+   "lk_paper",
+   "charcoal",
+   "ceramic"
+  ]
+ },
+ "lk_hall_room": {
+  "category": "room",
+  "notes": "Lecture hall shell 10 x 9 x 3.8 m, open toward -Y (camera side), terrazzo floor, cream walls with a blue gloss dado, door back-right, louvre window left, four fluorescent fittings.",
+  "size": [
+   10.0,
+   9.0,
+   3.8
+  ],
+  "id": "lk_hall_room",
+  "tris": 866,
+  "bbox_blender": [
+   [
+    -5.300000190734863,
+    -4.5,
+    0.0
+   ],
+   [
+    5.0,
+    4.650000095367432,
+    3.799999952316284
+   ]
+  ],
+  "materials": [
+   "terrazzo",
+   "plaster_paint",
+   "metal_paint",
+   "glass_louvre",
+   "metal_dark",
+   "emit_cool",
+   "paint_wood",
+   "alu",
+   "plastic"
+  ]
+ },
+ "lk_lectern": {
+  "category": "learning",
+  "notes": "Hardwood lectern with brass plaque and gooseneck mic; front faces -Y, lecturer stands at +Y.",
+  "id": "lk_lectern",
+  "tris": 392,
+  "bbox_blender": [
+   [
+    -0.3400000035762787,
+    -0.2866009771823883,
+    0.0
+   ],
+   [
+    0.3400000035762787,
+    0.29694417119026184,
+    1.4499999284744263
+   ]
+  ],
+  "materials": [
+   "wood",
+   "metal_paint",
+   "metal_dark",
+   "rubber",
+   "ph__office_notepads__office_notepads"
+  ]
+ },
+ "lk_noticeboard": {
+  "category": "learning",
+  "notes": "Cork noticeboard 1.2 x 0.9 m with pinned notices; mount base at ~1.1 m.",
+  "id": "lk_noticeboard",
+  "tris": 122,
+  "bbox_blender": [
+   [
+    -0.6399999856948853,
+    -0.012000000104308128,
+    0.0
+   ],
+   [
+    0.6399999856948853,
+    0.029999999329447746,
+    0.9800000190734863
+   ]
+  ],
+  "materials": [
+   "wood",
+   "hessian",
+   "lk_paper",
+   "plastic"
+  ]
+ },
+ "lk_projector_trolley": {
+  "category": "learning",
+  "notes": "AV trolley with a projector (lens faces -Y) and a laptop on the lower shelf.",
+  "id": "lk_projector_trolley",
+  "tris": 1500,
+  "bbox_blender": [
+   [
+    -0.32582223415374756,
+    -0.2510316073894501,
+    0.0
+   ],
+   [
+    0.3295390009880066,
+    0.4000000059604645,
+    0.8299999833106995
+   ]
+  ],
+  "materials": [
+   "metal_paint",
+   "alu",
+   "rubber",
+   "plastic",
+   "glass",
+   "metal_dark",
+   "emit_cool",
+   "cable",
+   "ph__classic_laptop__classic_laptop",
+   "ph__classic_laptop__classic_laptop_screen"
+  ]
+ },
+ "lk_screen": {
+  "category": "learning",
+  "notes": "Pull-down projector screen 2.4 x 1.5 m picture (material lk_slide takes the runtime slide canvas); hang base at ~1.3 m.",
+  "id": "lk_screen",
+  "tris": 50,
+  "bbox_blender": [
+   [
+    -1.2999999523162842,
+    -0.05000000074505806,
+    -0.029999999329447746
+   ],
+   [
+    1.2999999523162842,
+    0.05000000074505806,
+    1.8000001907348633
+   ]
+  ],
+  "materials": [
+   "plastic",
+   "fabric",
+   "lk_slide",
+   "alu"
+  ]
+ },
+ "lk_tiers": {
+  "category": "learning",
+  "notes": "Stage (1.7 m deep, 0.2 m) against the back wall and three 0.2 m seating tiers stepping up toward the camera; row k desk at three z = -1.6 + 1.1k, floor 0.2k.",
+  "id": "lk_tiers",
+  "tris": 124,
+  "bbox_blender": [
+   [
+    -5.0,
+    -4.5,
+    0.0
+   ],
+   [
+    5.0,
+    4.5,
+    0.6100000143051147
+   ]
+  ],
+  "materials": [
+   "wood_floor",
+   "metal_paint",
+   "alu"
+  ]
+ },
+ "lk_wall_clock": {
+  "category": "learning",
+  "notes": "Wall clock (Poly Haven wall_clock, CC0).",
+  "id": "lk_wall_clock",
+  "tris": 912,
+  "bbox_blender": [
+   [
+    -0.16012346744537354,
+    -0.047626931220293045,
+    -0.1608652025461197
+   ],
+   [
+    0.16024546325206757,
+    0.0010000000474974513,
+    0.1608652025461197
+   ]
+  ],
+  "materials": [
+   "metal_dark",
+   "ph__wall_clock__wall_clock",
+   "ph__wall_clock__wall_clock_glass"
+  ]
+ },
+ "lk_whiteboard": {
+  "category": "learning",
+  "notes": "Wall whiteboard 3.2 x 1.3 m (material lk_board takes a runtime canvas: lesson notes); mount base at ~0.9 m. Back at y=+0.03.",
+  "id": "lk_whiteboard",
+  "tris": 104,
+  "bbox_blender": [
+   [
+    -1.6299999952316284,
+    -0.09000000357627869,
+    -0.009999999776482582
+   ],
+   [
+    1.6299999952316284,
+    0.029999999329447746,
+    1.3600000143051147
+   ]
+  ],
+  "materials": [
+   "alu",
+   "lk_board",
+   "plastic",
+   "fabric"
+  ]
+ }
+}
