@@ -1,90 +1,19 @@
 {
   "asset": {
-    "generator": "Khronos glTF Blender I/O v3.3.32",
+    "generator": "glTF-Transform v4.5.1",
     "version": "2.0"
   },
-  "scene": 0,
-  "scenes": [
-    {
-      "name": "Scene",
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "mesh": 0,
-      "name": "plastic_monobloc_chair_01"
-    }
-  ],
-  "materials": [
-    {
-      "doubleSided": true,
-      "name": "plastic_monobloc_chair_01",
-      "normalTexture": {
-        "index": 0
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 1
-        },
-        "metallicRoughnessTexture": {
-          "index": 2
-        }
-      }
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Plane.002",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0
-        }
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    }
-  ],
-  "images": [
-    {
-      "mimeType": "image/jpeg",
-      "name": "plastic_monobloc_chair_01_nor_gl",
-      "uri": "textures/plastic_monobloc_chair_01_nor_gl_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "plastic_monobloc_chair_01_diff",
-      "uri": "textures/plastic_monobloc_chair_01_diff_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "plastic_monobloc_chair_01_metal-plastic_monobloc_chair_01_rough",
-      "uri": "textures/plastic_monobloc_chair_01_arm_1k.jpg"
-    }
-  ],
   "accessors": [
     {
-      "bufferView": 0,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 10068,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC3",
       "componentType": 5126,
       "count": 3271,
       "max": [
@@ -97,63 +26,219 @@
         -0.00001953914761543274,
         -0.335950642824173
       ],
-      "type": "VEC3"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 1
     },
     {
-      "bufferView": 1,
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 3271,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 2
+    },
+    {
+      "type": "VEC2",
       "componentType": 5126,
       "count": 3271,
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 2,
-      "componentType": 5126,
-      "count": 3271,
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5123,
-      "count": 10068,
-      "type": "SCALAR"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 3
     }
   ],
   "bufferViews": [
     {
-      "buffer": 0,
-      "byteLength": 39252,
+      "buffer": 1,
       "byteOffset": 0,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 39252,
-      "byteOffset": 39252,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 26168,
-      "byteOffset": 78504,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
       "byteLength": 20136,
-      "byteOffset": 104672,
-      "target": 34963
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 3568,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 10068
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 20136,
+      "byteLength": 39252,
+      "target": 34962,
+      "byteStride": 12,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 3568,
+          "byteLength": 30370,
+          "mode": "ATTRIBUTES",
+          "byteStride": 12,
+          "count": 3271
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 59388,
+      "byteLength": 13084,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 33940,
+          "byteLength": 4407,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 3271
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 72472,
+      "byteLength": 26168,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 38348,
+          "byteLength": 19464,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 3271
+        }
+      }
     }
   ],
   "samplers": [
     {
       "magFilter": 9729,
-      "minFilter": 9987
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "plastic_monobloc_chair_01_nor_gl",
+      "mimeType": "image/webp",
+      "uri": "textures/plastic_monobloc_chair_01_nor_gl_1k.webp"
+    },
+    {
+      "name": "plastic_monobloc_chair_01_diff",
+      "mimeType": "image/ktx2",
+      "uri": "textures/plastic_monobloc_chair_01_diff_1k.ktx2"
+    },
+    {
+      "name": "plastic_monobloc_chair_01_metal-plastic_monobloc_chair_01_rough",
+      "mimeType": "image/ktx2",
+      "uri": "textures/plastic_monobloc_chair_01_arm_1k.ktx2"
     }
   ],
   "buffers": [
     {
-      "byteLength": 124808,
-      "uri": "plastic_monobloc_chair_01.bin"
+      "uri": "plastic_monobloc_chair_01.bin",
+      "byteLength": 57812
+    },
+    {
+      "byteLength": 98640,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
     }
+  ],
+  "materials": [
+    {
+      "name": "plastic_monobloc_chair_01",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plane.002",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "plastic_monobloc_chair_01",
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_texture_basisu"
   ]
 }

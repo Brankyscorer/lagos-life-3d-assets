@@ -1,168 +1,19 @@
 {
   "asset": {
-    "generator": "Khronos glTF Blender I/O v4.0.44",
+    "generator": "glTF-Transform v4.5.1",
     "version": "2.0"
   },
-  "scene": 0,
-  "scenes": [
-    {
-      "name": "Scene",
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "mesh": 0,
-      "name": "street_lamp_01"
-    }
-  ],
-  "materials": [
-    {
-      "doubleSided": true,
-      "name": "street_lamp_01",
-      "normalTexture": {
-        "index": 0
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 1
-        },
-        "metallicRoughnessTexture": {
-          "index": 2
-        }
-      }
-    },
-    {
-      "alphaMode": "BLEND",
-      "doubleSided": true,
-      "name": "street_lamp_01_glass",
-      "normalTexture": {
-        "index": 3
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 4
-        },
-        "metallicRoughnessTexture": {
-          "index": 5
-        }
-      }
-    },
-    {
-      "doubleSided": true,
-      "name": "street_lamp_01_bulb",
-      "normalTexture": {
-        "index": 6
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 7
-        },
-        "metallicRoughnessTexture": {
-          "index": 8
-        }
-      }
-    }
-  ],
-  "meshes": [
-    {
-      "name": "street_lamp_01_post_mesh",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "indices": 3,
-          "material": 0
-        },
-        {
-          "attributes": {
-            "POSITION": 4,
-            "NORMAL": 5,
-            "TEXCOORD_0": 6
-          },
-          "indices": 7,
-          "material": 1
-        },
-        {
-          "attributes": {
-            "POSITION": 8,
-            "NORMAL": 9,
-            "TEXCOORD_0": 10
-          },
-          "indices": 11,
-          "material": 2
-        }
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 3
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    }
-  ],
-  "images": [
-    {
-      "mimeType": "image/jpeg",
-      "name": "street_lamp_01_nor_gl",
-      "uri": "textures/street_lamp_01_nor_gl_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "street_lamp_01_diff",
-      "uri": "textures/street_lamp_01_diff_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "street_lamp_01_metal-street_lamp_01_rough",
-      "uri": "textures/street_lamp_01_arm_1k.jpg"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "name": "street_lamp_01_diff-street_lamp_01_opacity",
-      "uri": "textures/street_lamp_01_diff_1k.jpg"
-    }
-  ],
   "accessors": [
     {
-      "bufferView": 0,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 90150,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC3",
       "componentType": 5126,
       "count": 17260,
       "max": [
@@ -175,28 +26,36 @@
         0,
         -0.19324657320976257
       ],
-      "type": "VEC3"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 1
     },
     {
-      "bufferView": 1,
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 17260,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 2
+    },
+    {
+      "type": "VEC2",
       "componentType": 5126,
       "count": 17260,
-      "type": "VEC3"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 3
     },
     {
-      "bufferView": 2,
-      "componentType": 5126,
-      "count": 17260,
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 3,
+      "type": "SCALAR",
       "componentType": 5123,
-      "count": 90150,
-      "type": "SCALAR"
+      "count": 1008,
+      "normalized": false,
+      "byteOffset": 180300,
+      "bufferView": 0
     },
     {
-      "bufferView": 4,
+      "type": "VEC3",
       "componentType": 5126,
       "count": 256,
       "max": [
@@ -209,28 +68,36 @@
         3.1376543045043945,
         -0.17394879460334778
       ],
-      "type": "VEC3"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 4
     },
     {
-      "bufferView": 5,
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 256,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 5
+    },
+    {
+      "type": "VEC2",
       "componentType": 5126,
       "count": 256,
-      "type": "VEC3"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 6
     },
     {
-      "bufferView": 6,
-      "componentType": 5126,
-      "count": 256,
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 7,
+      "type": "SCALAR",
       "componentType": 5123,
-      "count": 1008,
-      "type": "SCALAR"
+      "count": 672,
+      "normalized": false,
+      "byteOffset": 182316,
+      "bufferView": 0
     },
     {
-      "bufferView": 8,
+      "type": "VEC3",
       "componentType": 5126,
       "count": 148,
       "max": [
@@ -243,111 +110,359 @@
         3.2271063327789307,
         -0.02999458834528923
       ],
-      "type": "VEC3"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 7
     },
     {
-      "bufferView": 9,
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 148,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 8
+    },
+    {
+      "type": "VEC2",
       "componentType": 5126,
       "count": 148,
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 10,
-      "componentType": 5126,
-      "count": 148,
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 11,
-      "componentType": 5123,
-      "count": 672,
-      "type": "SCALAR"
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 9
     }
   ],
   "bufferViews": [
     {
-      "buffer": 0,
-      "byteLength": 207120,
+      "buffer": 1,
       "byteOffset": 0,
-      "target": 34962
+      "byteLength": 183660,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 33802,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 91830
+        }
+      }
     },
     {
-      "buffer": 0,
+      "buffer": 1,
+      "byteOffset": 183660,
       "byteLength": 207120,
-      "byteOffset": 207120,
-      "target": 34962
+      "target": 34962,
+      "byteStride": 12,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 33804,
+          "byteLength": 145275,
+          "mode": "ATTRIBUTES",
+          "byteStride": 12,
+          "count": 17260
+        }
+      }
     },
     {
-      "buffer": 0,
+      "buffer": 1,
+      "byteOffset": 390780,
+      "byteLength": 69040,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 179080,
+          "byteLength": 33446,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 17260
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 459820,
       "byteLength": 138080,
-      "byteOffset": 414240,
-      "target": 34962
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 212528,
+          "byteLength": 82888,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 17260
+        }
+      }
     },
     {
-      "buffer": 0,
-      "byteLength": 180300,
-      "byteOffset": 552320,
-      "target": 34963
-    },
-    {
-      "buffer": 0,
+      "buffer": 1,
+      "byteOffset": 597900,
       "byteLength": 3072,
-      "byteOffset": 732620,
-      "target": 34962
+      "target": 34962,
+      "byteStride": 12,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 295416,
+          "byteLength": 1943,
+          "mode": "ATTRIBUTES",
+          "byteStride": 12,
+          "count": 256
+        }
+      }
     },
     {
-      "buffer": 0,
-      "byteLength": 3072,
-      "byteOffset": 735692,
-      "target": 34962
+      "buffer": 1,
+      "byteOffset": 600972,
+      "byteLength": 1024,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 297360,
+          "byteLength": 551,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 256
+        }
+      }
     },
     {
-      "buffer": 0,
+      "buffer": 1,
+      "byteOffset": 601996,
       "byteLength": 2048,
-      "byteOffset": 738764,
-      "target": 34962
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 297912,
+          "byteLength": 1349,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 256
+        }
+      }
     },
     {
-      "buffer": 0,
-      "byteLength": 2016,
-      "byteOffset": 740812,
-      "target": 34963
-    },
-    {
-      "buffer": 0,
+      "buffer": 1,
+      "byteOffset": 604044,
       "byteLength": 1776,
-      "byteOffset": 742828,
-      "target": 34962
+      "target": 34962,
+      "byteStride": 12,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 299264,
+          "byteLength": 1421,
+          "mode": "ATTRIBUTES",
+          "byteStride": 12,
+          "count": 148
+        }
+      }
     },
     {
-      "buffer": 0,
-      "byteLength": 1776,
-      "byteOffset": 744604,
-      "target": 34962
+      "buffer": 1,
+      "byteOffset": 605820,
+      "byteLength": 592,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 300688,
+          "byteLength": 346,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 148
+        }
+      }
     },
     {
-      "buffer": 0,
+      "buffer": 1,
+      "byteOffset": 606412,
       "byteLength": 1184,
-      "byteOffset": 746380,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 1344,
-      "byteOffset": 747564,
-      "target": 34963
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 301036,
+          "byteLength": 893,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 148
+        }
+      }
     }
   ],
   "samplers": [
     {
       "magFilter": 9729,
-      "minFilter": 9987
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "street_lamp_01_nor_gl",
+      "mimeType": "image/webp",
+      "uri": "textures/street_lamp_01_nor_gl_1k.webp"
+    },
+    {
+      "name": "street_lamp_01_diff",
+      "mimeType": "image/ktx2",
+      "uri": "textures/street_lamp_01_diff_1k.ktx2"
+    },
+    {
+      "name": "street_lamp_01_metal-street_lamp_01_rough",
+      "mimeType": "image/ktx2",
+      "uri": "textures/street_lamp_01_arm_1k.ktx2"
     }
   ],
   "buffers": [
     {
-      "byteLength": 748908,
-      "uri": "street_lamp_01.bin"
+      "uri": "street_lamp_01.bin",
+      "byteLength": 301932
+    },
+    {
+      "byteLength": 607596,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
     }
+  ],
+  "materials": [
+    {
+      "name": "street_lamp_01",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    },
+    {
+      "name": "street_lamp_01_glass",
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "street_lamp_01_post_mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 8
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "street_lamp_01",
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_texture_basisu"
   ]
 }
